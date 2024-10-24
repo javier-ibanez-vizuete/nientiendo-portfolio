@@ -1,0 +1,86 @@
+/* Mobile First */
+
+/* A partir de aquí es para dar estilo par diferentes tamaños de pantalla */
+
+/* Media query para dispositivos TABLET (mayores a 480px) */
+@media (min-width: 481px) {
+	:root {
+		--container-width: 90%;
+		--font-size-html: 15px;
+
+		--small-padding: 16px;
+		--small-padding: 16px;
+		--small-padding: 16px;
+		--small-padding: 16px;
+		--medium-padding: 24px;
+		--medium-padding: 24px;
+		--medium-padding: 24px;
+		--medium-padding: 24px;
+		--big-padding: 32px;
+		--big-padding: 32px;
+		--big-padding: 32px;
+		--big-padding: 32px;
+
+		--padding-card: 12px;
+		--radius-card: 6px;
+	}
+}
+/* Media query para dispositivos DESKTOP (mayores a 1024px) */
+@media (min-width: 1024px) {
+	:root {
+		--container-width: 85%;
+		--font-size-html: 16px;
+
+		--small-padding: 20px;
+		--small-padding: 20px;
+		--small-padding: 20px;
+		--small-padding: 20px;
+		--medium-padding: 28px;
+		--medium-padding: 28px;
+		--medium-padding: 28px;
+		--medium-padding: 28px;
+		--big-padding: 36px;
+		--big-padding: 36px;
+		--big-padding: 36px;
+		--big-padding: 36px;
+
+		--spacing-xs: 6px;
+		--spacing-sm: 10px;
+		--spacing-md: 14px;
+		--spacing-lg: 18px;
+		--spacing-xl: 26px;
+		--spacing-2xl: 40px;
+		--spacing-3xl: 62px;
+		--spacing-4xl: 74px;
+
+		--padding-card: 16px;
+		--radius-card: 8px;
+
+		--button-padding: 4px 16px;
+		--icon-button-padding: 12px 12px 8px 12px;
+		--button-border-radius: 4px;
+	}
+}
+/* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
+@media (min-width: 1440px) {
+	:root {
+		--container-width: 80%;
+		--font-size-html: 17px;
+
+		--small-padding: 20px;
+		--small-padding: 20px;
+		--small-padding: 20px;
+		--small-padding: 20px;
+		--medium-padding: 28px;
+		--medium-padding: 28px;
+		--medium-padding: 28px;
+		--medium-padding: 28px;
+		--big-padding: 36px;
+		--big-padding: 36px;
+		--big-padding: 36px;
+		--big-padding: 36px;
+
+		--padding-card: 20px;
+		--radius-card: 10px;
+	}
+}
