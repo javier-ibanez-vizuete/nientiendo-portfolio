@@ -10,7 +10,8 @@ html {
 
 html,
 body {
-	font-family: "Montserrat", "Lora", "Poppins", Helvetica, -apple-system,
+	font-family: "Orbitron", "Chau Philomene One", "Puritan", "Press Start 2P",
+		"Montserrat", "Lora", "Poppins", Helvetica, -apple-system,
 		BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -87,3 +88,188 @@ html {
 }
 
 /* -------------ESTILOS WEB--------------- */
+.body-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: burlywood;
+}
+
+input {
+	display: none;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+
+	width: 320px;
+	height: 600px;
+	background-color: red;
+}
+
+.button-off-on {
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+	left: 45px;
+	overflow: hidden;
+	margin-top: -10px;
+	transition: left 0.5s ease-in-out;
+}
+
+.label-button-off-on {
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+}
+
+.input-button-off-on:checked ~ header .button-off-on {
+	left: 70px;
+}
+
+.lines-top-nientiendo-container {
+	display: flex;
+
+	background-color: brown;
+}
+
+.left-square-nintendo-container {
+	width: 20px;
+	background-color: #b3b1b2;
+	border-top-left-radius: 8px;
+}
+
+.vertical-line-separator-nientiendo {
+	width: 4px;
+	background-color: #999894;
+}
+
+.top-center-nintendo-container {
+	display: flex;
+	align-items: center;
+	flex: 1;
+
+	padding: 4px 12px;
+	background-color: #b3b1b2;
+}
+
+.top-center-text-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+
+	background-color: #999894;
+	font-size: 12px;
+	padding: 2px 6px;
+	border-radius: 12px;
+}
+
+.right-square-nintendo-container {
+	width: 20px;
+	background-color: #b3b1b2;
+	border-top-right-radius: 8px;
+}
+
+.horizontal-line-top-nientiendo {
+	height: 4px;
+	background-color: #999894;
+}
+
+.screen-container {
+	display: flex;
+	justify-content: center;
+
+	padding: 20px 24px 0px;
+	background-color: #b3b1b2;
+}
+
+.exterior-screen-display {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	gap: 8px;
+	
+	padding: 2px 8px 32px;
+	background-color: #575763;
+	border: 0.5px solid #2f2f33;
+	border-radius: 8px;
+	border-bottom-right-radius: 36px;
+}
+
+.top-exterior-screen-container {
+	display: flex;
+	align-items: center;
+}
+
+.colored-lines-exterior-screen-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 2px;
+	flex: 2;
+	align-self: stretch;
+}
+
+.smallest-lines {
+	flex: 1;
+}
+
+.red-horizontal-line {
+	height: 2px;
+	background-color: #5D2A4D;
+}
+
+.blue-horizontal-line {
+	height: 2px;
+	background-color: #090045;
+}
+
+.top-exterior-screen-container small {
+	padding: 0px 2px;
+	font-size: 7px;
+}
+
+.center-exterior-screen-container {
+	display: flex;
+	gap: 8px;
+
+	padding-right: 32px;
+}
+
+.led-exterior-screen-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.led-exterior-screen {
+	height: 12px;
+	width: 12px;
+	background-color: #271422;
+	border-radius: 50%;
+	box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.input-button-off-on:checked ~ header .led-exterior-screen {
+	background-color: #eb0b0b;
+	box-shadow: 0px 0px 13px 0px rgba(235,11,11,1);
+}
+
+.led-exterior-screen-container small {
+	font-size: 6px;
+}
+
+.main-screen-container {
+	height: 180px;
+	width: 180px;
+	background-color: #495D16;
+	border: 1px solid black;
+}
