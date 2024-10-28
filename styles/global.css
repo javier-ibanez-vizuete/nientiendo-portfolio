@@ -78,7 +78,8 @@ ul {
 	--spacing-3xl: 48px;
 	--spacing-4xl: 60px;
 
-	--radius: 4px;
+	--radius: 8px;
+	--radius-4xl: 40px;
 	--button-padding-xs: 2px 4px;
 }
 
@@ -86,12 +87,19 @@ html {
 	font-size: var(--font-size-html);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Press Start 2P";
 	color: var(--text-secondary-color);
 }
 
-p, a, span {
+p,
+a,
+span {
 	color: var(--text-secondary-color);
 }
 
@@ -121,7 +129,9 @@ h5 {
 	font-size: 0.7rem;
 }
 
-h6, p, a {
+h6,
+p,
+a {
 	font-size: 0.6rem;
 }
 
@@ -150,30 +160,94 @@ main {
 
 	max-width: 21rem;
 	max-height: 35rem;
-	background-color: black;
-	overflow: hidden;
+	background-color: brown;
+}
+
+/* ----------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO---- */
+.power-switch-container {
+	display: flex;
+	width: 100%;
 }
 
 .power-label-off-on {
-	display: flex;
-	align-items: center;
+	height: 0.5rem;
+	width: 0.5rem;
 	position: relative;
-	bottom: 0;
-	left: 45px;
-	overflow: hidden;
-	margin-top: -10px;
+
+	top: 0rem;
+	left: 3.5rem;
+	margin-top: -0.5rem;
+	background-color: blue;
+	clip-path: polygon(0 16%, 48% 0, 100% 16%, 100% 100%, 0% 100%);
 	transition: left 0.5s ease-in-out;
 }
 
-.label-button-off-on {
-	border-top-left-radius: 50%;
-	border-top-right-radius: 50%;
-	width: 10px;
-	height: 10px;
-	background-color: black;
-}
-
 .power-input:checked ~ main .power-label-off-on {
-	left: 70px;
+	left: 6.5rem;
 }
 
+/* -----ESTILOS PARA LA PARTE SUPERIOR DE LA GAMEBOY ---*/
+.power-shell-container {
+	display: flex;
+	flex-direction: column;
+
+	background-color: var(--bg-color);
+	border-top-left-radius: var(--radius);
+	border-top-right-radius: var(--radius);
+}
+
+.top-power-shell-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.corner-square-top-shell {
+	width: 1.5rem;
+}
+
+.vertical-line-top-shell {
+	width: 0.2rem;
+	box-shadow: inset 0px 0px 2px 0px rgb(108, 107, 107);
+}
+
+.square-power-shell-container {
+	display: flex;
+	align-items: center;
+	flex: 1;
+
+	padding: var(--spacing-sm);
+}
+
+.text-square-power-shell-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+
+	padding: var(--spacing-xs);
+	box-shadow: inset 0px 0px 40px 0px rgb(108, 107, 107);
+	border-radius: var(--radius-4xl);
+}
+
+.text-square-power-shell-container p {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+
+	color: var(--bg-color);
+	font-family: "Orbitron";
+}
+
+.text-square-power-shell-container .power-off-letter::before {
+	content: "<";
+}
+
+.text-square-power-shell-container .power-on-letter::after {
+	content: ">";
+}
+
+.horizontal-line-bottom-shell {
+	height: 0.2rem;
+	box-shadow: inset 0px 0px 2px 0px rgb(108, 107, 107);
+}

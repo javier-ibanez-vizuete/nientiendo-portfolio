@@ -44,7 +44,14 @@
 		background-color: blue;
 	}
 	
+	/* ----------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO----- */
+	.power-label-off-on {
+		height: 0.7rem;
+		width: 0.7rem;
+		margin-top: -0.7rem;
+	}
 }
+
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
 @media (min-width: 1024px) {
 	:root {
@@ -60,7 +67,6 @@
 		--spacing-3xl: 62px;
 		--spacing-4xl: 74px;
 
-		--radius: 4px;
 		--button-padding-xs: 4px 8px;
 	}
 
@@ -99,6 +105,11 @@
 		background-color: pink;
 	}
 
+	/* ------------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO--------- */
+	.power-input:checked ~ main .power-label-off-on {
+		left: 7rem;
+	}
+
 }
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
@@ -115,36 +126,20 @@
 		--spacing-3xl: 52px;
 		--spacing-4xl: 64px;
 	
-		--radius: 4px;
 		--button-padding-xs: 2px 4px;
 	}
 
-	/* small {
-		font-size: 0.8rem;
+	/* -----------MAIN-------------- */
+	/* ----------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO----- */
+	.power-label-off-on {
+		height: 1rem;
+		width: 1rem;
+		left: 3.5rem;
+		margin-top: -1rem;
 	}
 	
-	h1 {
-		font-size: 1.5rem;
+	.power-input:checked ~ main .power-label-off-on {
+		left: 6.8rem;
 	}
 	
-	h2 {
-		font-size: 1.3rem;
-	}
-	
-	h3 {
-		font-size: 1.2rem;
-	}
-	
-	h4 {
-		font-size: 1.1rem;
-	}
-	
-	h5 {
-		font-size: 1rem;
-	}
-	
-	h6, p, a {
-		font-size: 0.9rem;
-	} */
-
 }
