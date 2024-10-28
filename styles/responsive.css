@@ -7,42 +7,49 @@
 	:root {
 		--container-width: 90%;
 		--font-size-html: 15px;
-
-		--small-padding: 16px;
-		--small-padding: 16px;
-		--small-padding: 16px;
-		--small-padding: 16px;
-		--medium-padding: 24px;
-		--medium-padding: 24px;
-		--medium-padding: 24px;
-		--medium-padding: 24px;
-		--big-padding: 32px;
-		--big-padding: 32px;
-		--big-padding: 32px;
-		--big-padding: 32px;
-
-		--padding-card: 12px;
-		--radius-card: 6px;
 	}
+
+	small {
+		font-size: 0.6rem;
+	}
+	
+	h1 {
+		font-size: 1.3rem;
+	}
+	
+	h2 {
+		font-size: 1.1rem;
+	}
+	
+	h3 {
+		font-size: 1rem;
+	}
+	
+	h4 {
+		font-size: 0.9rem;
+	}
+	
+	h5 {
+		font-size: 0.8rem;
+	}
+	
+	h6, p, a {
+		font-size: 0.7rem;
+	}
+
+	/* -----------------MAIN------------ */
+	main {
+		max-width: 25rem;
+		max-height: 41rem;
+		background-color: blue;
+	}
+	
 }
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */
 @media (min-width: 1024px) {
 	:root {
 		--container-width: 85%;
 		--font-size-html: 16px;
-
-		--small-padding: 20px;
-		--small-padding: 20px;
-		--small-padding: 20px;
-		--small-padding: 20px;
-		--medium-padding: 28px;
-		--medium-padding: 28px;
-		--medium-padding: 28px;
-		--medium-padding: 28px;
-		--big-padding: 36px;
-		--big-padding: 36px;
-		--big-padding: 36px;
-		--big-padding: 36px;
 
 		--spacing-xs: 6px;
 		--spacing-sm: 10px;
@@ -53,13 +60,45 @@
 		--spacing-3xl: 62px;
 		--spacing-4xl: 74px;
 
-		--padding-card: 16px;
-		--radius-card: 8px;
-
-		--button-padding: 4px 16px;
-		--icon-button-padding: 12px 12px 8px 12px;
-		--button-border-radius: 4px;
+		--radius: 4px;
+		--button-padding-xs: 4px 8px;
 	}
+
+	small {
+		font-size: 0.7rem;
+	}
+	
+	h1 {
+		font-size: 1.4rem;
+	}
+	
+	h2 {
+		font-size: 1.2rem;
+	}
+	
+	h3 {
+		font-size: 1.1rem;
+	}
+	
+	h4 {
+		font-size: 1rem;
+	}
+	
+	h5 {
+		font-size: 0.9rem;
+	}
+	
+	h6, p, a {
+		font-size: 0.8rem;
+	}
+
+	/* ---------------MAIN------------------ */
+	main {
+		max-width: 26rem;
+		max-height: 43rem;
+		background-color: pink;
+	}
+
 }
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
@@ -67,20 +106,45 @@
 		--container-width: 80%;
 		--font-size-html: 17px;
 
-		--small-padding: 20px;
-		--small-padding: 20px;
-		--small-padding: 20px;
-		--small-padding: 20px;
-		--medium-padding: 28px;
-		--medium-padding: 28px;
-		--medium-padding: 28px;
-		--medium-padding: 28px;
-		--big-padding: 36px;
-		--big-padding: 36px;
-		--big-padding: 36px;
-		--big-padding: 36px;
-
-		--padding-card: 20px;
-		--radius-card: 10px;
+		--spacing-xs: 8px;
+		--spacing-sm: 12px;
+		--spacing-md: 16px;
+		--spacing-lg: 20px;
+		--spacing-xl: 28px;
+		--spacing-2xl: 40px;
+		--spacing-3xl: 52px;
+		--spacing-4xl: 64px;
+	
+		--radius: 4px;
+		--button-padding-xs: 2px 4px;
 	}
+
+	/* small {
+		font-size: 0.8rem;
+	}
+	
+	h1 {
+		font-size: 1.5rem;
+	}
+	
+	h2 {
+		font-size: 1.3rem;
+	}
+	
+	h3 {
+		font-size: 1.2rem;
+	}
+	
+	h4 {
+		font-size: 1.1rem;
+	}
+	
+	h5 {
+		font-size: 1rem;
+	}
+	
+	h6, p, a {
+		font-size: 0.9rem;
+	} */
+
 }

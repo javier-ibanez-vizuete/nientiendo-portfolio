@@ -41,51 +41,60 @@
 
 <body>
     <div class="body-container">
-        <input type="checkbox" name="button-off-on" id="button-off-on" class="input-button-off-on">
-        <header>
-            <label for="button-off-on" class="button-off-on">
-                <div class="label-button-off-on"></div>
-            </label>
+        <input type="checkbox" name="power-conection" id="power-conection" class="power-input">
 
-            <div class="lines-top-nientiendo-container">
-                <div class="left-square-nintendo-container"></div>
-                <div class="vertical-line-separator-nientiendo"></div>
-                <div class="top-center-nintendo-container">
-                    <div class="top-center-text-container">
-                                <small>OFF · ON</small>
-                    </div>
-                </div>
-                <div class="vertical-line-separator-nientiendo"></div>
-                <div class="right-square-nintendo-container"></div>
+        <!-- -----------SOMBRAS DEL BACKGROUND DEL NAV MENU--------- -->
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-biography" checked>
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-experience">
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-projects">
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-hobbies">
+
+        <!-- --------------------BOTONES PARA ABRIR LAS SECCIONES--------- -->
+        <input type="checkbox" name="biography-input-display" id="biography-input-display">
+        <input type="checkbox" name="experience-input-display" id="experience-input-display">
+        <input type="checkbox" name="projects-input-display" id="projects-input-display">
+        <input type="checkbox" name="hobbies-input-display" id="hobbies-input-display">
+
+        <!-- --------------------BOTONES PARA LA SECCION DE BIOGRAFIA------- -->
+        <input type="radio" name="biography-section-display" id="biography-section-header-display" checked>
+        <input type="radio" name="biography-section-display" id="biography-section-more-content-display">
+
+        <!-- --------------------BOTONES PARA LA SECCION DE EXPERIENCIA -->
+        <input type="radio" name="bg-shadow-experience-header" id="bg-shadow-experience-rocket">
+        <input type="checkbox" name="next-content-experience-section-display" id="next-content-experience-section-display">
+
+        <!-- ------------------BOTONES PARA LA SECCION DE PROYECTOS----------- -->
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-discord" checked>
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-eltiempo">
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-gtav">
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-tesla">
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-trello">
+
+        <input type="checkbox" name="discord-project-display" id="discord-project-display">
+        <input type="checkbox" name="eltiempo-project-display" id="eltiempo-project-display">
+        <input type="checkbox" name="gtav-project-display" id="gtav-project-display">
+        <input type="checkbox" name="tesla-project-display" id="tesla-project-display">
+        <input type="checkbox" name="trello-project-display" id="trello-project-display">
+
+        <!-- ------------------BOTONES-PARA LA SECCION DE HOBBIES--------------- -->
+        <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-gaming" checked>
+        <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-sport">
+
+        <input type="checkbox" name="gaming-hobby-display" id="gaming-hobby-display">
+        <input type="checkbox" name="sport-hobby-display" id="sport-hobby-display">
+
+        <main class="container">
+            <div class="power-switch-container">
+                <label for="power-conection" class="power-label-off-on">
+                    <div class="label-button-off-on"></div>
+                </label>
             </div>
-            <div class="horizontal-line-top-nientiendo"></div>
-            <div class="screen-container">
-                <div class="exterior-screen-display">
-                    <div class="top-exterior-screen-container">
-                        <div class="colored-lines-exterior-screen-container">
-                            <div class="red-horizontal-line"></div>
-                            <div class="blue-horizontal-line"></div>
-                        </div>
-
-                        <small>DOT MATRIX WITH STERO SOUND</small>
-
-                        <div class="colored-lines-exterior-screen-container smallest-lines">
-                            <div class="red-horizontal-line"></div>
-                            <div class="blue-horizontal-line"></div>
-                        </div>
-                    </div>
-
-                    <div class="center-exterior-screen-container">
-                        <div class="led-exterior-screen-container">
-                            <div class="led-exterior-screen"></div>
-                            <small>BATTERY</small>
-                        </div>
-
-                        <div class="main-screen-container"></div>
-                    </div>
-                </div>
-            </div>
-        </header>
+            <div class=""></div>
+            <div class="">PARTE DE LA PANTALLA</div>
+            <div class="">PARTE DEL NOMBRE GAMEBOY</div>
+            <div class="">PARTE DE LOS BOTONES</div>
+            <div class="">PARTE DE LOS AURICULARES Y ALTAVOZ</div>
+        </main>
     </div>
 </body>
 
