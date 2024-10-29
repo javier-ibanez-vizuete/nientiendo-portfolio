@@ -168,24 +168,64 @@ main {
 /* ----------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO---- */
 .power-switch-container {
 	display: flex;
+
+	position: relative;
 	width: 100%;
 }
 
-.power-label-off-on {
+.power-label-off {
 	height: 0.5rem;
-	width: 0.5rem;
-	position: relative;
-
-	top: 0rem;
-	left: 3.5rem;
+	width: 0.6rem;
+	position: absolute;
+	bottom: 0rem;
 	margin-top: -0.5rem;
-	background-color: blue;
-	clip-path: polygon(0 16%, 48% 0, 100% 16%, 100% 100%, 0% 100%);
-	transition: left 0.5s ease-in-out;
+	background-color: var(--tertiary-color);
+	border-top-left-radius: var(--radius-4xl);
+	border-top-right-radius: var(--radius-4xl);
+	transition: left 0.5s ease-in-out, visibility 0.5s ease;
 }
 
-.power-input:checked ~ main .power-label-off-on {
+.power-input-off:not(:checked) ~ main .power-label-off {
 	left: 5.5rem;
+	visibility: visible;
+}
+
+.power-input-off:checked ~ main .power-label-off {
+	left: 3.5rem;
+	visibility: hidden;
+}
+
+.power-input-off:not(:checked)
+	~ .nav-menu-input:checked
+	~ main
+	.power-label-off {
+	visibility: visible;
+}
+
+.power-label-on {
+	height: 0.5rem;
+	width: 0.6rem;
+	position: absolute;
+	bottom: 0rem;
+	margin-top: -0.5rem;
+	background-color: var(--tertiary-color);
+	border-top-left-radius: var(--radius-4xl);
+	border-top-right-radius: var(--radius-4xl);
+	transition: left 0.5s ease-in-out, visibility 0.5s ease;
+}
+
+.power-input-on:not(:checked) ~ main .power-label-on {
+	left: 3.5rem;
+	visibility: visible;
+}
+
+.power-input-on:checked ~ main .power-label-on {
+	left: 5.5rem;
+	visibility: hidden;
+}
+
+.nav-menu-input:checked ~ main .power-label-on {
+	visibility: hidden;
 }
 
 /* -----ESTILOS PARA LA PARTE SUPERIOR DE LA GAMEBOY ---*/
@@ -343,32 +383,33 @@ main {
 
 .power-led {
 	align-self: center;
-	
+
 	height: 0.5rem;
 	width: 0.5rem;
 	border-radius: 50%;
 	background-color: #341919;
 }
 
-.power-input:checked ~ main .power-led {
+.power-input-on:checked ~ main .power-led {
 	background-color: #ff0000;
-	box-shadow: 0px 0px 0.5rem 0px rgba(255,0,0,1);
+	box-shadow: 0px 0px 0.5rem 0px rgba(255, 0, 0, 1);
 }
 
 /* -------------ESTILOS PARA LA PANTALLA VERDE----------- */
 .inside-screen-and-sections-container {
 	display: flex;
-	
+
+	position: relative;
 	background-color: var(--secondary-bg-color);
 	border: 2px solid #373636;
 	border-radius: 2px;
-	box-shadow: inset 0px 0px 0.3rem 0px rgba(55,54,54,1);
+	box-shadow: inset 0px 0px 0.3rem 0px rgba(55, 54, 54, 1);
 	width: 12.5rem;
 	height: 11.5rem;
 	overflow: hidden;
 }
 
-.power-input:checked ~ main .inside-screen-and-sections-container {
+.power-input-off:not(:checked) ~ main .inside-screen-and-sections-container {
 	box-shadow: 0px 0px 1rem 0px var(--secondary-bg-color);
 	filter: brightness(130%);
 }
@@ -376,17 +417,80 @@ main {
 /* -------------ESTILOS PARA EL MENSAJE DE BIENVENIDA------- */
 .welcome-container {
 	display: flex;
-	visibility: hidden;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 1rem;
 	flex: 1;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	visibility: hidden;
 	transform: translateY(-10rem);
 	transition: transform 2s ease, visibility 0s ease;
 }
 
-.power-input:checked ~ main .welcome-container {
+.power-input-on:checked ~ main .welcome-container {
 	transform: translateY(0px);
 	visibility: visible;
+}
+
+/* --------------ESTILOS PARA EL NAV DE LA PANTALLA------- */
+.navigation-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	transition: visibility 0.1s ease;
+}
+
+.navigation-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	gap: 1rem;
+}
+
+.nav-menu-input:checked ~ main .navigation-display {
+	visibility: visible;
+}
+
+.navigation-menu li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: var(--spacing-xs);
+}
+
+.nav-menu-input:checked
+	~ .shadow-biography-input:checked
+	~ main
+	.navigation-menu-item-biography,
+.nav-menu-input:checked
+	~ .shadow-experience-input:checked
+	~ main
+	.navigation-menu-item-experience,
+.nav-menu-input:checked
+	~ .shadow-projects-input:checked
+	~ main
+	.navigation-menu-item-projects,
+.nav-menu-input:checked
+	~ .shadow-hobbies-input:checked
+	~ main
+	.navigation-menu-item-hobbies {
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(90%);
 }

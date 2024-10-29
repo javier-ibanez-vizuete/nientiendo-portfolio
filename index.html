@@ -41,13 +41,15 @@
 
 <body>
     <div class="body-container">
-        <input type="checkbox" name="power-conection" id="power-conection" class="power-input">
+        <input type="radio" name="power-conection" id="power-conection-off" class="power-input-off">
+        <input type="radio" name="power-conection" id="power-conection-on" class="power-input-on" checked>
+        <input type="radio" name="power-conection" id="nav-menu-display" class="nav-menu-input">
 
         <!-- -----------SOMBRAS DEL BACKGROUND DEL NAV MENU--------- -->
-        <input type="radio" name="bg-shadow-nav" id="bg-shadow-biography" checked>
-        <input type="radio" name="bg-shadow-nav" id="bg-shadow-experience">
-        <input type="radio" name="bg-shadow-nav" id="bg-shadow-projects">
-        <input type="radio" name="bg-shadow-nav" id="bg-shadow-hobbies">
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-biography" class="shadow-biography-input" checked>
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-experience" class="shadow-experience-input">
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-projects" class="shadow-projects-input">
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-hobbies" class="shadow-hobbies-input">
 
         <!-- --------------------BOTONES PARA ABRIR LAS SECCIONES--------- -->
         <input type="checkbox" name="biography-input-display" id="biography-input-display">
@@ -56,16 +58,16 @@
         <input type="checkbox" name="hobbies-input-display" id="hobbies-input-display">
 
         <!-- --------------------BOTONES PARA LA SECCION DE BIOGRAFIA------- -->
-        <input type="radio" name="biography-section-display" id="biography-section-header-display" checked>
-        <input type="radio" name="biography-section-display" id="biography-section-more-content-display">
+        <!-- <input type="radio" name="biography-section-display" id="biography-section-header-display" checked>
+        <input type="radio" name="biography-section-display" id="biography-section-more-content-display"> -->
 
         <!-- --------------------BOTONES PARA LA SECCION DE EXPERIENCIA -->
-        <input type="radio" name="bg-shadow-experience-header" id="bg-shadow-experience-rocket">
+        <!-- <input type="radio" name="bg-shadow-experience-header" id="bg-shadow-experience-rocket">
         <input type="checkbox" name="next-content-experience-section-display"
-            id="next-content-experience-section-display">
+            id="next-content-experience-section-display"> -->
 
         <!-- ------------------BOTONES PARA LA SECCION DE PROYECTOS----------- -->
-        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-discord" checked>
+        <!-- <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-discord" checked>
         <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-eltiempo">
         <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-gtav">
         <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-tesla">
@@ -75,7 +77,7 @@
         <input type="checkbox" name="eltiempo-project-display" id="eltiempo-project-display">
         <input type="checkbox" name="gtav-project-display" id="gtav-project-display">
         <input type="checkbox" name="tesla-project-display" id="tesla-project-display">
-        <input type="checkbox" name="trello-project-display" id="trello-project-display">
+        <input type="checkbox" name="trello-project-display" id="trello-project-display"> -->
 
         <!-- ------------------BOTONES-PARA LA SECCION DE HOBBIES--------------- -->
         <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-gaming" checked>
@@ -86,8 +88,8 @@
 
         <main class="container">
             <div class="power-switch-container">
-                <label for="power-conection" class="power-label-off-on">
-                </label>
+                <label for="power-conection-off" class="power-label-off"></label>
+                <label for="power-conection-on" class="power-label-on"></label>
             </div>
             <div class="power-shell-container">
                 <div class="top-power-shell-container">
@@ -131,12 +133,33 @@
                                 <h1>Nintendo</h1>
                                 <h6>(Press start to continue)</h6>
                             </header>
+
+                            <nav class="navigation-display">
+                                <ul class="navigation-menu">
+                                    <li class="navigation-menu-item-biography">
+                                        <h4>Biography</h4>
+                                    </li>
+
+                                    <li class="navigation-menu-item-experience">
+                                        <h4>Experience</h4>
+                                    </li>
+
+                                    <li class="navigation-menu-item-projects">
+                                        <h4>Projects</h4>
+                                    </li>
+                                    <li class="navigation-menu-item-hobbies">
+                                        <h4>Hobbies</h4>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="#"></div>
-            <div class="#">PARTE DE LOS BOTONES</div>
+            <div class="all-buttons-container">
+                <label for="nav-menu-display">MENULOQUISIMO</label>
+            </div>
             <div class="#">PARTE DE LOS AURICULARES Y ALTAVOZ</div>
         </main>
     </div>
