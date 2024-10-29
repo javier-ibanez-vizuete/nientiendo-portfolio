@@ -12,43 +12,63 @@
 	small {
 		font-size: 0.6rem;
 	}
-	
+
 	h1 {
 		font-size: 1.3rem;
 	}
-	
+
 	h2 {
 		font-size: 1.1rem;
 	}
-	
+
 	h3 {
 		font-size: 1rem;
 	}
-	
+
 	h4 {
 		font-size: 0.9rem;
 	}
-	
+
 	h5 {
 		font-size: 0.8rem;
 	}
-	
-	h6, p, a {
+
+	h6,
+	p,
+	a {
 		font-size: 0.7rem;
 	}
 
 	/* -----------------MAIN------------ */
 	main {
-		max-width: 25rem;
-		max-height: 41rem;
+		max-width: 26rem;
+		max-height: 42rem;
 		background-color: blue;
 	}
-	
+
 	/* ----------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO----- */
 	.power-label-off-on {
 		height: 0.7rem;
 		width: 0.7rem;
 		margin-top: -0.7rem;
+	}
+
+	/* ------ESTILOS PARA EL EXTERIOR DE LA PANTALLA------ */
+	.outside-screen-container {
+		gap: 0.2rem;
+	
+		padding-bottom: var(--spacing-2xl);
+	}
+
+	.battery-led-and-inside-screen-container {
+		gap: 0.8rem;
+	}
+	
+
+	/* -------------ESTILOS PARA LA PANTALLA VERDE------- */
+	.inside-screen-and-sections-container {
+		width: 15.5rem;
+		height: 14.5rem;
 	}
 }
 
@@ -67,42 +87,47 @@
 		--spacing-3xl: 62px;
 		--spacing-4xl: 74px;
 
+		--radius: 12px;
+		--radius-4xl: 52px;
+
 		--button-padding-xs: 4px 8px;
 	}
 
 	small {
 		font-size: 0.7rem;
 	}
-	
+
 	h1 {
 		font-size: 1.4rem;
 	}
-	
+
 	h2 {
 		font-size: 1.2rem;
 	}
-	
+
 	h3 {
 		font-size: 1.1rem;
 	}
-	
+
 	h4 {
 		font-size: 1rem;
 	}
-	
+
 	h5 {
 		font-size: 0.9rem;
 	}
-	
-	h6, p, a {
+
+	h6,
+	p,
+	a {
 		font-size: 0.8rem;
 	}
 
 	/* ---------------MAIN------------------ */
 	main {
-		max-width: 26rem;
-		max-height: 43rem;
-		background-color: pink;
+		max-width: 27rem;
+		max-height: 44rem;
+		background-color: brown;
 	}
 
 	/* ------------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO--------- */
@@ -110,6 +135,15 @@
 		left: 7rem;
 	}
 
+	/* ---------ESTILOS PARA LA PARTE EXTERNA DE LA PANTALLA------ */
+	.battery-led-and-inside-screen-container {
+		gap: 0.7rem;
+	}
+
+	/* ----------ESTILOS PARA EL LED DE ENCENDIDO------------- */
+	.battery-led-container {
+		gap: 0.5rem;
+	}
 }
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
@@ -125,7 +159,10 @@
 		--spacing-2xl: 40px;
 		--spacing-3xl: 52px;
 		--spacing-4xl: 64px;
-	
+
+		--radius: 12px;
+		--radius-4xl: 60px;
+
 		--button-padding-xs: 2px 4px;
 	}
 
@@ -137,9 +174,8 @@
 		left: 3.5rem;
 		margin-top: -1rem;
 	}
-	
+
 	.power-input:checked ~ main .power-label-off-on {
 		left: 6.8rem;
 	}
-	
 }
