@@ -70,6 +70,11 @@
 		width: 15.5rem;
 		height: 14.5rem;
 	}
+
+	/* -----------ESTILOS PARA LA MARCA DE LA CARCASA-------- */
+	.nintendo-font {
+		padding-bottom: 0.1rem;
+	}
 }
 
 /* Media query para dispositivos DESKTOP (mayores a 1024px) */

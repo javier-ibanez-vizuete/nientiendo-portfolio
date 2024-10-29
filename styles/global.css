@@ -494,3 +494,38 @@ main {
 	background-color: var(--secondary-bg-color);
 	filter: brightness(90%);
 }
+
+/* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
+.brand-shell-container {
+	display: flex;
+	align-items: flex-end;
+	gap: 0.1rem;
+
+	padding: var(--spacing-xs) 1.5rem;
+	background-color: var(--bg-color);
+}
+
+.nintendo-font, .gameboy-font, .tm-font {
+	color: var(--text-color);
+}
+
+.nintendo-font {
+	font-family: "Chau Philomene One";
+	font-size: 1.2rem;
+}
+
+.gameboy-font {
+	font-family: "Puritan";
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	font-style: italic;
+	font-weight: 200;
+	transform: skew(-5deg);
+}
+
+.tm-font {
+	font-family: "orbitron";
+	font-size: 0.8rem;
+	font-weight: 900;
+	margin-left: -0.2rem;
+}
