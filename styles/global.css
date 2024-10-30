@@ -118,14 +118,17 @@ h1 {
 
 h2 {
 	font-size: 1rem;
+	text-transform: uppercase;
 }
 
 h3 {
 	font-size: 0.9rem;
+	text-transform: uppercase;
 }
 
 h4 {
 	font-size: 0.8rem;
+	text-transform: uppercase;
 }
 
 h5 {
@@ -192,6 +195,7 @@ main {
 	border-top-right-radius: var(--radius-4xl);
 	transition: left 0.5s ease-in-out, visibility 0s ease;
 	border-bottom: 1px solid var(--accent-bg-color);
+	cursor: pointer;
 }
 
 .power-input-off:not(:checked) ~ main .power-label-off {
@@ -225,6 +229,7 @@ main {
 	border-top-right-radius: var(--radius-4xl);
 	transition: left 0.5s ease-in-out, visibility 0s ease;
 	border-bottom: 1px solid var(--accent-bg-color);
+	cursor: pointer;
 }
 
 .power-input-off:checked
@@ -427,7 +432,9 @@ main {
 }
 
 .inside-screen-and-sections-container p {
-	font-size: 0.7rem;
+	font-size: 0.5rem;
+	line-height: 0.6rem;
+	font-family: "Press Start 2P";
 }
 
 .power-input-off:not(:checked) ~ main .inside-screen-and-sections-container {
@@ -558,6 +565,45 @@ main {
 	flex: 1;
 }
 
+.logo-linkedin-container > picture,
+.logo-instagram-container > picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logos-biography-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+
+.logo-linkedin-container,
+.logo-instagram-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+
+	width: 2rem;
+}
+
+.biography-page-input:checked
+	~ .biography-next-content-input:checked
+	~ .bg-shadow-linkedin-input:checked
+	~ main
+	.logo-linkedin-container,
+.biography-page-input:checked
+	~ .biography-next-content-input:checked
+	~ .bg-shadow-instagram-input:checked
+	~ main
+	.logo-instagram-container {
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(80%);
+}
+
 .shadow-biography-input:checked
 	~ .biography-page-input:checked
 	~ main
@@ -578,6 +624,88 @@ main {
 	.biography-section-next-content {
 	display: flex;
 }
+
+/* --------ESTILOS PARA LA SECCION DE EXPERIENCIA------------- */
+.experience-section {
+	display: flex;
+	justify-content: center;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	padding: var(--spacing-sm);
+}
+
+.header-experience-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.experience-page-input:checked
+	~ .bg-shadow-rocket:checked
+	~ main
+	.rocket-experience-paraghaph {
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(90%);
+}
+
+.experience-page-input:checked ~ main .experience-section {
+	visibility: visible;
+}
+
+.experience-page-input:checked
+	~ .next-content-experience-input:checked
+	~ main
+	.header-experience-section {
+	display: none;
+}
+
+.experience-section-next-content {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.7rem;
+}
+
+.experience-page-input:checked
+	~ .next-content-experience-input:checked
+	~ main
+	.experience-section-next-content {
+	display: flex;
+}
+
+.logo-rocket-container,
+.logo-rocket-container > picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-rocket-container {
+	align-self: center;
+	width: 2rem;
+}
+
+.experience-section-next-content > p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+
+	font-size: 0.5rem;
+}
+
+.experience-section-next-content > p > span {
+	text-transform: uppercase;
+}
+
 /* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
 .brand-shell-container {
 	display: flex;
@@ -623,7 +751,6 @@ main {
 	gap: 2rem;
 
 	padding: var(--spacing-xl) 1.5rem;
-	/* background-color: var(--bg-color); */
 }
 
 .directionals-and-a-b-buttons-container {
@@ -654,6 +781,7 @@ main {
 	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 0 100%, 0% 20%);
 	background-color: var(--tertiary-color);
 	box-shadow: inset 0px 0px 20px 0px #131313;
+	cursor: pointer;
 }
 
 .button-up-model:active {
@@ -668,6 +796,7 @@ main {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	cursor: pointer;
 }
 
 .directionals-buttons-middle-side-container {
@@ -678,13 +807,16 @@ main {
 
 .left-button-container,
 .center-button-container,
-.right-button-container {
+.right-button-container,
+.button-left-model,
+.button-right-model {
 	flex: 1;
 
 	height: 2rem;
 	width: 2rem;
 	background-color: var(--tertiary-color);
 	box-shadow: inset 0px 0px 20px 0px #131313;
+	cursor: pointer;
 }
 
 .left-button-container:active,
@@ -693,7 +825,18 @@ main {
 }
 
 .left-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	clip-path: polygon(20% 0%, 100% 0, 100% 100%, 20% 100%, 0 84%, 0% 20%);
+}
+
+.left-button-container label,
+.right-button-container {
+	flex: 1;
+
+	cursor: pointer;
 }
 
 .center-button-container {
@@ -712,6 +855,10 @@ main {
 }
 
 .right-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	clip-path: polygon(83% 0, 100% 20%, 100% 84%, 84% 100%, 0 100%, 0 0);
 }
 
@@ -722,6 +869,7 @@ main {
 	align-self: center;
 
 	position: relative;
+	cursor: pointer;
 }
 
 .bottom-buttons-container > label {
@@ -732,6 +880,7 @@ main {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	cursor: pointer;
 }
 
 .button-down-model {
@@ -741,6 +890,7 @@ main {
 	clip-path: polygon(100% 0, 100% 85%, 84% 100%, 16% 100%, 0 84%, 0 0);
 	box-shadow: inset 0px 0px 20px 0px #131313;
 	transition: box-shadow 0.1s ease-in-out;
+	cursor: pointer;
 }
 
 .button-down-model:active {
@@ -773,6 +923,7 @@ main {
 	align-items: center;
 
 	position: relative;
+	cursor: pointer;
 }
 
 .b-button-container + p,
@@ -802,6 +953,7 @@ main {
 	border-radius: 100%;
 	border: 1px solid #333333;
 	box-shadow: inset 0px 0px 1rem 0px rgba(130, 31, 31, 1);
+	cursor: pointer;
 }
 
 .button-model:active {
@@ -839,6 +991,7 @@ main {
 	background-color: var(--accent-bg-color);
 	border-radius: var(--radius-4xl);
 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 1);
+	cursor: pointer;
 }
 
 .select-button-container > label,
@@ -846,6 +999,8 @@ main {
 	width: 100%;
 	height: 100%;
 	flex: 1;
+
+	cursor: pointer;
 }
 
 .select-button-container:active,
@@ -954,6 +1109,32 @@ main {
 	visibility: visible;
 }
 
+/* -----------ESTILOS/FUNCIONES PARA LOS BOTONES IZQUIERDA----------- */
+.left-button-container label {
+	visibility: hidden;
+}
+
+.biography-page-input:checked
+	~ .biography-next-content-input:checked
+	~ .bg-shadow-instagram-input:checked
+	~ main
+	.linkedin-selection-left {
+	visibility: visible;
+}
+
+/* ----------ESTILOS/FUNCIONES PARA LOS BOTONES DERECHA------------- */
+.right-button-container label {
+	visibility: hidden;
+}
+
+.biography-page-input:checked
+	~ .biography-next-content-input:checked
+	~ .bg-shadow-linkedin-input:checked
+	~ main
+	.instagram-selection-right {
+	visibility: visible;
+}
+
 /* ------------------ESTILOS/FUNCIONES PARA LOS BOTTONES ABAJO------------ */
 .bottom-buttons-container label {
 	visibility: hidden;
@@ -986,7 +1167,23 @@ main {
 	visibility: hidden;
 }
 
+.experience-page-input:checked
+	~ .bg-shadow-rocket:checked
+	~ .next-content-experience-input:checked
+	~ main
+	.experience-rocket-out {
+	visibility: visible;
+}
+
+.biography-page-input:checked ~ main .experience-biography-out {
+	visibility: visible;
+}
+
 /* ------------------ESTILOS/FUNCIONES PARA EL BOTON ENTRAR (a)------------------ */
+.a-button-container a {
+	display: block;
+}
+
 .a-button-container > label,
 .a-button-container > a {
 	visibility: hidden;
@@ -994,4 +1191,40 @@ main {
 
 .nav-menu-input:checked ~ .shadow-biography-input:checked ~ main .biography-in {
 	visibility: visible;
+}
+
+.biography-page-input:checked
+	~ .biography-next-content-input:checked
+	~ .bg-shadow-linkedin-input
+	~ main
+	.linkedin-in {
+	visibility: visible;
+}
+
+.biography-page-input:checked
+	~ .biography-next-content-input:checked
+	~ .bg-shadow-instagram-input
+	~ main
+	.instagram-in {
+	visibility: visible;
+}
+
+.nav-menu-input:checked
+	~ .shadow-experience-input:checked
+	~ main
+	.experience-in {
+	visibility: visible;
+}
+
+.experience-page-input:checked
+	~ .bg-shadow-rocket:checked
+	~ .next-content-experience-input:not(:checked)
+	~ main
+	.experience-rocket-in {
+	visibility: visible;
+}
+/* -----ESTILOS/FUNCIONES PARA LOS BOTONES SELECT Y ESTART---- */
+
+.power-input-off:checked ~ main .select-and-start-buttons-container label {
+	visibility: hidden;
 }

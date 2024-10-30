@@ -65,12 +65,18 @@
         <input type="radio" name="biography-section-display" id="biography-section-more-content-display"
             class="biography-next-content-input">
 
-        <!-- --------------------BOTONES PARA LA SECCION DE EXPERIENCIA -->
-        <input type="radio" name="bg-shadow-experience-header" id="bg-shadow-experience-rocket">
-        <input type="checkbox" name="next-content-experience-section-display"
-            id="next-content-experience-section-display">
+        <!-- -------------SOMBRAS PARA LOS LOGOS DE BIOGRAFIA------------ -->
+        <input type="radio" name="bg-shadow-logos" id="bg-shadow-logo-linkedin" class="bg-shadow-linkedin-input"
+            checked>
+        <input type="radio" name="bg-shadow-logos" id="bg-shadow-logo-instagram" class="bg-shadow-instagram-input">
 
-        <!-- ------------------BOTONES PARA LA SECCION DE PROYECTOS----------- -->
+        <!-- --------------------BOTONES PARA LA SECCION DE EXPERIENCIA -->
+        <input type="radio" name="bg-shadow-experience-header" id="bg-shadow-experience-rocket" class="bg-shadow-rocket"
+            checked>
+        <input type="checkbox" name="next-content-experience-section-display"
+            id="next-content-experience-section-display" class="next-content-experience-input">
+
+        <!-- ------------------SOMBRAS PARA LA SECCION DE PROYECTOS----------- -->
         <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-discord" checked>
         <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-eltiempo">
         <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-gtav">
@@ -202,6 +208,75 @@
                                         to pursue my passion for technology. I later completed a Master’s in Programming
                                         and AI.
                                     </p>
+
+                                    <div class="logos-biography-container">
+                                        <div class="logo-linkedin-container">
+                                            <picture>
+                                                <source srcset="/media/logos/linkedin/logo-linkedin-200w.avif"
+                                                    type="image/avif">
+                                                <source srcset="/media/logos/linkedin/logo-linkedin-200w.webp"
+                                                    type="image/webp">
+                                                <source srcset="/media/logos/linkedin/logo-linkedin-200w.png"
+                                                    type="image/png">
+                                                <img src="/media/logos/linkedin/logo-linkedin.png" alt="Instagram logo">
+                                            </picture>
+                                        </div>
+
+                                        <div class="logo-instagram-container">
+                                            <picture>
+                                                <source srcset="/media/logos/instagram/logo-instagram-200w.avif"
+                                                    type="image/avif">
+                                                <source srcset="/media/logos/instagram/logo-instagram-200w.webp"
+                                                    type="image/webp">
+                                                <source srcset="/media/logos/instagram/logo-instagram-200w.png"
+                                                    type="image/png">
+                                                <img src="/media/logos/instagram/logo-instagram.png"
+                                                    alt="Instagram logo">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="experience-section">
+                                <div class="header-experience-section">
+                                    <h2>Experience</h2>
+                                    <p class="rocket-experience-paraghaph">ROCKET 418</p>
+                                </div>
+
+                                <div class="experience-section-next-content">
+                                    <div class="logo-rocket-container">
+                                        <picture>
+                                            <source srcset="/media/logos/rocket418/logo-experience-rocket418-200w.avif"
+                                                type="image/avif">
+                                            <source srcset="/media/logos/rocket418/logo-experience-rocket418-200w.webp"
+                                                type="image/webp">
+                                            <source srcset="/media/logos/rocket418/logo-experience-rocket418-200w.png"
+                                                type="image/png">
+                                            <img src="/media/logos/rocket418/logo-experience-rocket418.png"
+                                                alt="Rocket 418 logo">
+                                        </picture>
+                                    </div>
+
+                                    <p>
+                                        <span>Position:</span>
+                                        Frontend Developer
+                                    </p>
+
+                                    <p>
+                                        <span>Location:</span>
+                                        Madrid, Spain
+                                    </p>
+
+                                    <p>
+                                        <span>Duration:</span>
+                                        March 2024 - Present
+                                    </p>
+
+                                    <p>
+                                        <span>Type of employment:</span>
+                                        Full-time, Hybrid
+                                    </p>
                                 </div>
                             </section>
                         </div>
@@ -233,11 +308,17 @@
                         </div>
 
                         <div class="directionals-buttons-middle-side-container">
-                            <div class="left-button-container"></div>
+                            <div class="left-button-container">
+                                <label for="bg-shadow-logo-linkedin"
+                                    class="button-left-model linkedin-selection-left"></label>
+                            </div>
                             <div class="center-button-container">
                                 <div class="center-button-circle-form"></div>
                             </div>
-                            <div class="right-button-container"></div>
+                            <div class="right-button-container">
+                                <label for="bg-shadow-logo-instagram"
+                                    class="button-right-model instagram-selection-right"></label>
+                            </div>
                         </div>
                         <div class="bottom-buttons-container button-down-model">
                             <label for="bg-shadow-experience"
@@ -264,8 +345,8 @@
                     <div class="a-b-buttons-container">
                         <div class="b-button-and-letter-container">
                             <div class="b-button-container button-model">
-                                <label for="biography-display" class="button-model"></label>
-                                <label for="experience-display" class="button-model"></label>
+                                <label for="nav-menu-display" class="button-model experience-biography-out"></label>
+                                <label for="next-content-experience-section-display" class="button-model experience-rocket-out"></label>
                                 <label for="projects-display" class="button-model"></label>
                                 <label for="hobbies-display" class="button-model"></label>
                             </div>
@@ -277,6 +358,8 @@
                             <div class="a-button-container button-model">
                                 <label for="biography-display" class="button-model biography-in"></label>
                                 <label for="experience-display" class="button-model experience-in"></label>
+                                <label for="next-content-experience-section-display"
+                                    class="button-model experience-rocket-in"></label>
                                 <label for="projects-display" class="button-model projects-in"></label>
                                 <label for="hobbies-display" class="button-model hobbies-in"></label>
                                 <label for="discord-project-display" class="button-model discord-in"></label>
@@ -286,11 +369,15 @@
                                 <label for="trello-project-display" class="button-model trello-in"></label>
                                 <label for="gaming-hobby-display" class="button-model gaming-in"></label>
                                 <label for="sport-hobby-display" class="button-model sport-in"></label>
-                                <!-- <a href="#discord" target="_blank" class="button-model"></a>
+                                <a href="https://www.linkedin.com/in/javier-ibanez-vizuete/" target="_blank"
+                                    class="button-model linkedin-in"></a>
+                                <a href="https://www.instagram.com/eljaviersiclaro/" target="_blank"
+                                    class="button-model instagram-in"></a>
+                                <a href="#discord" target="_blank" class="button-model"></a>
                                 <a href="#eltiempo" target="_blank" class="button-model"></a>
                                 <a href="#gtav" target="_blank" class="button-model"></a>
                                 <a href="#tesla" target="_blank" class="button-model"></a>
-                                <a href="#trello" target="_blank" class="button-model"></a> -->
+                                <a href="#trello" target="_blank" class="button-model"></a>
                             </div>
 
                             <p>A</p>
