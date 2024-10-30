@@ -187,10 +187,11 @@ main {
 	position: absolute;
 	bottom: 0rem;
 	margin-top: -0.5rem;
-	background-color: var(--tertiary-color);
+	background-color: var(--bg-color);
 	border-top-left-radius: var(--radius-4xl);
 	border-top-right-radius: var(--radius-4xl);
 	transition: left 0.5s ease-in-out, visibility 0s ease;
+	border-bottom: 1px solid var(--accent-bg-color);
 }
 
 .power-input-off:not(:checked) ~ main .power-label-off {
@@ -219,10 +220,11 @@ main {
 	margin-top: -0.5rem;
 	left: 3.5rem;
 	visibility: hidden;
-	background-color: var(--tertiary-color);
+	background-color: var(--bg-color);
 	border-top-left-radius: var(--radius-4xl);
 	border-top-right-radius: var(--radius-4xl);
 	transition: left 0.5s ease-in-out, visibility 0s ease;
+	border-bottom: 1px solid var(--accent-bg-color);
 }
 
 .power-input-off:checked
