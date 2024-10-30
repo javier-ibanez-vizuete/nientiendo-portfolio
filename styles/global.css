@@ -1175,7 +1175,14 @@ main {
 	visibility: visible;
 }
 
-.biography-page-input:checked ~ main .experience-biography-out {
+.biography-page-input:checked ~ main .page-biography-out {
+	visibility: visible;
+}
+
+.experience-page-input:checked
+	~ .next-content-experience-input:not(:checked)
+	~ main
+	.page-experience-out {
 	visibility: visible;
 }
 
