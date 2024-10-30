@@ -43,7 +43,7 @@
 	main {
 		max-width: 26rem;
 		max-height: 42rem;
-		background-color: blue;
+		background-color: var(--bg-color);
 	}
 
 	/* ----------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO----- */
@@ -132,7 +132,7 @@
 	main {
 		max-width: 27rem;
 		max-height: 44rem;
-		background-color: brown;
+		background-color: var(--bg-color);
 	}
 
 	/* ------------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO--------- */
