@@ -54,14 +54,16 @@
         <input type="radio" name="bg-shadow-nav" id="bg-shadow-hobbies" class="shadow-hobbies-input">
 
         <!-- --------------------BOTONES PARA ABRIR LAS SECCIONES--------- -->
-        <input type="checkbox" name="screen-estates" id="biography-display">
-        <input type="checkbox" name="screen-estates" id="experience-display">
-        <input type="checkbox" name="screen-estates" id="projects-display">
-        <input type="checkbox" name="screen-estates" id="hobbies-display">
+        <input type="radio" name="screen-estates" id="biography-display" class="biography-page-input">
+        <input type="radio" name="screen-estates" id="experience-display" class="experience-page-input">
+        <input type="radio" name="screen-estates" id="projects-display" class="projects-page-input">
+        <input type="radio" name="screen-estates" id="hobbies-display" class="hobbies-page-input">
 
         <!-- --------------------BOTONES PARA LA SECCION DE BIOGRAFIA------- -->
-        <input type="radio" name="biography-section-display" id="biography-section-header-display" checked>
-        <input type="radio" name="biography-section-display" id="biography-section-more-content-display">
+        <input type="radio" name="biography-section-display" id="biography-section-header-display"
+            class="biography-header-input" checked>
+        <input type="radio" name="biography-section-display" id="biography-section-more-content-display"
+            class="biography-next-content-input">
 
         <!-- --------------------BOTONES PARA LA SECCION DE EXPERIENCIA -->
         <input type="radio" name="bg-shadow-experience-header" id="bg-shadow-experience-rocket">
@@ -154,6 +156,54 @@
                                     </li>
                                 </ul>
                             </nav>
+
+                            <section class="biography-section">
+                                <div class="header-biography-section">
+                                    <h2>Biography</h2>
+                                    <p>Hello, I’m Javier Ibáñez Vizuete, a Developer born in Seville, Spain, in 1993.
+                                        After moving across Spain and the UK, I gained experience in hospitality,
+                                        eventually managing a restaurant in London.
+                                    </p>
+                                    <div class="arrow-icon-container">
+                                        <picture>
+                                            <source
+                                                srcset="/media/icons/icons-arrows/icon-down-arrow/icon-down-arrow-black-200w.avif"
+                                                type="image/avif">
+                                            <source
+                                                srcset="/media/icons/icons-arrows/icon-down-arrow/icon-down-arrow-black-200w.webp"
+                                                type="image/webp">
+                                            <source
+                                                srcset="/media/icons/icons-arrows/icon-down-arrow/icon-down-arrow-black-200w.png"
+                                                type="image/png">
+                                            <img src="/media/icons/icons-arrows/icon-down-arrow/icon-down-arrow-black.png"
+                                                alt="Downward icon arrow">
+                                        </picture>
+                                    </div>
+                                </div>
+
+                                <div class="biography-section-next-content">
+                                    <div class="arrow-icon-container">
+                                        <source
+                                            srcset="/media/icons/icons-arrows/icon-up-arrow/icon-up-arrow-black-200w.avif"
+                                            type="image/avif">
+                                        <source
+                                            srcset="/media/icons/icons-arrows/icon-up-arrow/icon-up-arrow-black-200w.webp"
+                                            type="image/webp">
+                                        <source
+                                            srcset="/media/icons/icons-arrows/icon-up-arrow/icon-up-arrow-black-200w.png"
+                                            type="image/png">
+                                        <img src="/media/icons/icons-arrows/icon-up-arrow/icon-up-arrow-black.png"
+                                            alt="Downward icon arrow">
+
+                                    </div>
+
+                                    <p>
+                                        Returning to Spain, I became Director of a restaurant school, which allowed me
+                                        to pursue my passion for technology. I later completed a Master’s in Programming
+                                        and AI.
+                                    </p>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -168,15 +218,20 @@
                     <div class="directionals-buttons-container">
                         <div class="up-buttons-container button-up-model">
                             <label for="bg-shadow-biography" class="button-up-model biography-up-shadow-button"></label>
-                            <label for="bg-shadow-experience" class="button-up-model experience-up-shadow-button"></label>
+                            <label for="bg-shadow-experience"
+                                class="button-up-model experience-up-shadow-button"></label>
                             <label for="bg-shadow-projects" class="button-up-model projects-up-shadow-button"></label>
-                            <label for="bg-shadow-project-discord" class="button-up-model discord-up-shadow-button"></label>
-                            <label for="bg-shadow-project-eltiempo" class="button-up-model eltiempo-up-shadow-button"></label>
+                            <label for="bg-shadow-project-discord"
+                                class="button-up-model discord-up-shadow-button"></label>
+                            <label for="bg-shadow-project-eltiempo"
+                                class="button-up-model eltiempo-up-shadow-button"></label>
                             <label for="bg-shadow-project-gtav" class="button-up-model gtav-up-shadow-button"></label>
                             <label for="bg-shadow-project-tesla" class="button-up-model tesla-up-shadow-button"></label>
                             <label for="bg-shadow-hobby-gaming" class="button-up-model gaming-up-shadow-button"></label>
+                            
+                            <label for="biography-section-header-display" class="biography-header-section-up"></label>
                         </div>
-                        
+
                         <div class="directionals-buttons-middle-side-container">
                             <div class="left-button-container"></div>
                             <div class="center-button-container">
@@ -185,14 +240,24 @@
                             <div class="right-button-container"></div>
                         </div>
                         <div class="bottom-buttons-container button-down-model">
-                            <label for="bg-shadow-experience" class="button-down-model experience-down-shadow-button"></label>
-                            <label for="bg-shadow-projects" class="button-down-model projects-down-shadow-button"></label>
+                            <label for="bg-shadow-experience"
+                                class="button-down-model experience-down-shadow-button"></label>
+                            <label for="bg-shadow-projects"
+                                class="button-down-model projects-down-shadow-button"></label>
                             <label for="bg-shadow-hobbies" class="button-down-model hobbies-down-shadow-button"></label>
-                            <label for="bg-shadow-project-eltiempo" class="button-down-model eltiempo-down-shadow-button"></label>
-                            <label for="bg-shadow-project-gtav" class="button-down-model gtav-down-shadow-button"></label>
-                            <label for="bg-shadow-project-tesla" class="button-down-model tesla-down-shadow-button"></label>
-                            <label for="bg-shadow-project-trello" class="button-down-model trello-down-shadow-button"></label>
-                            <label for="bg-shadow-hobby-sport" class="button-down-model sport-down-shadow-button"></label>
+                            <label for="bg-shadow-project-eltiempo"
+                                class="button-down-model eltiempo-down-shadow-button"></label>
+                            <label for="bg-shadow-project-gtav"
+                                class="button-down-model gtav-down-shadow-button"></label>
+                            <label for="bg-shadow-project-tesla"
+                                class="button-down-model tesla-down-shadow-button"></label>
+                            <label for="bg-shadow-project-trello"
+                                class="button-down-model trello-down-shadow-button"></label>
+                            <label for="bg-shadow-hobby-sport"
+                                class="button-down-model sport-down-shadow-button"></label>
+
+                            <label for="biography-section-more-content-display"
+                                class="biography-more-content-down"></label>
                         </div>
                     </div>
 
@@ -210,18 +275,17 @@
 
                         <div class="a-button-and-letter-container">
                             <div class="a-button-container button-model">
-                                <label for="biography-display" class="button-model"></label>
-                                <label for="experience-display" class="button-model"></label>
-                                <label for="projects-display" class="button-model"></label>
-                                <label for="hobbies-display" class="button-model"></label>
-                                <label for="biography-section-more-content-display" class="button-model"></label>
-                                <label for="discord-project-display" class="button-model"></label>
-                                <label for="eltiempo-project-display" class="button-model"></label>
-                                <label for="gtav-project-display" class="button-model"></label>
-                                <label for="tesla-project-display" class="button-model"></label>
-                                <label for="trello-project-display" class="button-model"></label>
-                                <label for="gaming-hobby-display" class="button-model"></label>
-                                <label for="sport-hobby-display" class="button-model"></label>
+                                <label for="biography-display" class="button-model biography-in"></label>
+                                <label for="experience-display" class="button-model experience-in"></label>
+                                <label for="projects-display" class="button-model projects-in"></label>
+                                <label for="hobbies-display" class="button-model hobbies-in"></label>
+                                <label for="discord-project-display" class="button-model discord-in"></label>
+                                <label for="eltiempo-project-display" class="button-model eltiempo-in"></label>
+                                <label for="gtav-project-display" class="button-model gtav-in"></label>
+                                <label for="tesla-project-display" class="button-model tesla-in"></label>
+                                <label for="trello-project-display" class="button-model trello-in"></label>
+                                <label for="gaming-hobby-display" class="button-model gaming-in"></label>
+                                <label for="sport-hobby-display" class="button-model sport-in"></label>
                                 <!-- <a href="#discord" target="_blank" class="button-model"></a>
                                 <a href="#eltiempo" target="_blank" class="button-model"></a>
                                 <a href="#gtav" target="_blank" class="button-model"></a>
@@ -236,7 +300,7 @@
                 <div class="select-and-start-buttons-container">
                     <div class="select-button-and-letter-container">
                         <div class="select-button-container">
-                            <label for="power-input-on" class="welcome-mesage-select"></label>
+                            <label for="power-conection-on" class="welcome-mesage-select"></label>
                         </div>
 
                         <p>Select</p>

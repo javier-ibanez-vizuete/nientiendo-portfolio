@@ -71,6 +71,12 @@
 		height: 14.5rem;
 	}
 
+	/* -------------ESTILOS PARA LA SECCION DE BIOGRAFIA-------- */
+	.header-biography-section {
+		gap: 1.5rem;
+	}
+	
+
 	/* -----------ESTILOS PARA LA MARCA DE LA CARCASA-------- */
 	.nintendo-font {
 		padding-bottom: 0.1rem;
@@ -149,6 +155,12 @@
 	.battery-led-container {
 		gap: 0.5rem;
 	}
+
+	/* ----------ESTILOS PARA LA PANTALLA VERDE---------------- */
+	.inside-screen-and-sections-container p {
+		font-size: 0.8rem;
+	}
+	
 }
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {
