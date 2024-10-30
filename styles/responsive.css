@@ -160,6 +160,12 @@
 	.inside-screen-and-sections-container p {
 		font-size: 0.8rem;
 	}
+
+	.inside-screen-and-sections-container p {
+		font-size: 0.6rem;
+		line-height: 0.7rem;
+	}
+	
 	
 	/* -----------ESTILOS PARA LA SECCION DE EXPERIENCIA------------- */
 	.experience-section-next-content > p {
