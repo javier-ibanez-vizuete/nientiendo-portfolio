@@ -80,6 +80,9 @@
 		gap: 2rem;
 	}
 
+	.tesla-project-display > p, .trello-project-display > p {
+		font-size: 0.5rem;
+	}
 
 	/* -----------ESTILOS PARA LA MARCA DE LA CARCASA-------- */
 	.nintendo-font {
@@ -180,6 +183,10 @@
 	/* ---------ESTILOS PARA LA SECCION DE PROYECTOS-------- */
 	.header-projects-section {
 		gap: 2rem;
+	}
+
+	.tesla-project-display > p, .trello-project-display > p {
+		font-size: 0.5rem;
 	}
 }
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */

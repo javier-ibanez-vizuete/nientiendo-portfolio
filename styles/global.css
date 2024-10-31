@@ -176,6 +176,10 @@ main {
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
+main ::selection {
+	display: none;
+}
+
 /* ----------ESTILOS PARA EL INTERRUPTOR DE ENCENDIDO---- */
 .power-switch-container {
 	display: flex;
@@ -752,46 +756,26 @@ main {
 	align-items: center;
 }
 
+.portfolio-menu > li > h5 {
+	text-transform: uppercase;
+}
+
 .projects-page-input:checked
 	~ .bg-shadow-discord-input:checked
 	~ main
-	.portfolio-menuitem-discord {
-	padding: var(--spacing-xs);
-	border: 0.1rem dashed var(--text-color-bg);
-	background-color: var(--secondary-bg-color);
-	filter: brightness(90%);
-}
-
+	.portfolio-menuitem-discord,
 .projects-page-input:checked
 	~ .bg-shadow-eltiempo-input:checked
 	~ main
-	.portfolio-menuitem-eltiempo {
-	padding: var(--spacing-xs);
-	border: 0.1rem dashed var(--text-color-bg);
-	background-color: var(--secondary-bg-color);
-	filter: brightness(90%);
-}
-
+	.portfolio-menuitem-eltiempo,
 .projects-page-input:checked
 	~ .bg-shadow-gtav-input:checked
 	~ main
-	.portfolio-menuitem-gtav {
-	padding: var(--spacing-xs);
-	border: 0.1rem dashed var(--text-color-bg);
-	background-color: var(--secondary-bg-color);
-	filter: brightness(90%);
-}
-
+	.portfolio-menuitem-gtav,
 .projects-page-input:checked
 	~ .bg-shadow-tesla-input:checked
 	~ main
-	.portfolio-menuitem-tesla {
-	padding: var(--spacing-xs);
-	border: 0.1rem dashed var(--text-color-bg);
-	background-color: var(--secondary-bg-color);
-	filter: brightness(90%);
-}
-
+	.portfolio-menuitem-tesla,
 .projects-page-input:checked
 	~ .bg-shadow-trello-input:checked
 	~ main
@@ -820,6 +804,11 @@ main {
 	align-self: center;
 }
 
+.tesla-project-display > p,
+.trello-project-display > p {
+	font-size: 0.4rem;
+}
+
 .logo-github-container {
 	display: flex;
 	justify-content: center;
@@ -846,7 +835,23 @@ main {
 .projects-page-input:checked
 	~ .discord-project-input:checked
 	~ main
-	.discord-project-display {
+	.discord-project-display,
+.projects-page-input:checked
+	~ .eltiempo-project-input:checked
+	~ main
+	.eltiempo-project-display,
+.projects-page-input:checked
+	~ .gtav-project-input:checked
+	~ main
+	.gtav-project-display,
+.projects-page-input:checked
+	~ .tesla-project-input:checked
+	~ main
+	.tesla-project-display,
+.projects-page-input:checked
+	~ .trello-project-input:checked
+	~ main
+	.trello-project-display {
 	visibility: visible;
 }
 
@@ -1335,17 +1340,11 @@ main {
 .nav-menu-input:checked
 	~ .shadow-biography-input:checked
 	~ main
-	.experience-down-shadow-button {
-	visibility: visible;
-}
-
+	.experience-down-shadow-button,
 .nav-menu-input:checked
 	~ .shadow-experience-input:checked
 	~ main
-	.projects-down-shadow-button {
-	visibility: visible;
-}
-
+	.projects-down-shadow-button,
 .nav-menu-input:checked
 	~ .shadow-projects-input:checked
 	~ main
@@ -1357,26 +1356,17 @@ main {
 	~ .bg-shadow-discord-input:checked
 	~ .discord-project-input:not(:checked)
 	~ main
-	.eltiempo-down-shadow-button {
-	visibility: visible;
-}
-
+	.eltiempo-down-shadow-button,
 .projects-page-input:checked
 	~ .bg-shadow-eltiempo-input:checked
 	~ .eltiempo-project-input:not(:checked)
 	~ main
-	.gtav-down-shadow-button {
-	visibility: visible;
-}
-
+	.gtav-down-shadow-button,
 .projects-page-input:checked
 	~ .bg-shadow-gtav-input:checked
 	~ .gtav-project-input:not(:checked)
 	~ main
-	.tesla-down-shadow-button {
-	visibility: visible;
-}
-
+	.tesla-down-shadow-button,
 .projects-page-input:checked
 	~ .bg-shadow-tesla-input:checked
 	~ .tesla-project-input:not(:checked)
@@ -1398,17 +1388,11 @@ main {
 	visibility: visible;
 }
 
-.biography-page-input:checked ~ main .page-biography-out {
-	visibility: visible;
-}
-
+.biography-page-input:checked ~ main .page-biography-out,
 .experience-page-input:checked
 	~ .next-content-experience-input:not(:checked)
 	~ main
-	.page-experience-out {
-	visibility: visible;
-}
-
+	.page-experience-out,
 .projects-page-input:checked
 	~ .projects-displays-none:not(:checked)
 	~ main
@@ -1419,7 +1403,23 @@ main {
 .projects-page-input:checked
 	~ .discord-project-input:checked
 	~ main
-	.discord-project-out {
+	.discord-project-out,
+.projects-page-input:checked
+	~ .eltiempo-project-input:checked
+	~ main
+	.eltiempo-project-out,
+.projects-page-input:checked
+	~ .gtav-project-input:checked
+	~ main
+	.gtav-project-out,
+.projects-page-input:checked
+	~ .tesla-project-input:checked
+	~ main
+	.tesla-project-out,
+.projects-page-input:checked
+	~ .trello-project-input:checked
+	~ main
+	.trello-project-out {
 	visibility: visible;
 }
 
@@ -1433,7 +1433,12 @@ main {
 	visibility: hidden;
 }
 
-.nav-menu-input:checked ~ .shadow-biography-input:checked ~ main .biography-in {
+.nav-menu-input:checked ~ .shadow-biography-input:checked ~ main .biography-in,
+.nav-menu-input:checked
+	~ .shadow-experience-input:checked
+	~ main
+	.experience-in,
+.nav-menu-input:checked ~ .shadow-projects-input:checked ~ main .projects-in {
 	visibility: visible;
 }
 
@@ -1441,22 +1446,12 @@ main {
 	~ .biography-next-content-input:checked
 	~ .bg-shadow-linkedin-input
 	~ main
-	.linkedin-in {
-	visibility: visible;
-}
-
+	.linkedin-in,
 .biography-page-input:checked
 	~ .biography-next-content-input:checked
 	~ .bg-shadow-instagram-input
 	~ main
 	.instagram-in {
-	visibility: visible;
-}
-
-.nav-menu-input:checked
-	~ .shadow-experience-input:checked
-	~ main
-	.experience-in {
 	visibility: visible;
 }
 
@@ -1468,22 +1463,51 @@ main {
 	visibility: visible;
 }
 
-.nav-menu-input:checked ~ .shadow-projects-input:checked ~ main .projects-in {
-	visibility: visible;
-}
-
 .projects-page-input:checked
 	~ .bg-shadow-discord-input:checked
 	~ .discord-project-input:not(:checked)
 	~ main
-	.discord-in {
+	.discord-in,
+.projects-page-input:checked
+	~ .bg-shadow-eltiempo-input:checked
+	~ .eltiempo-project-input:not(:checked)
+	~ main
+	.eltiempo-in,
+.projects-page-input:checked
+	~ .bg-shadow-gtav-input:checked
+	~ .gtav-project-input:not(:checked)
+	~ main
+	.gtav-in,
+.projects-page-input:checked
+	~ .bg-shadow-tesla-input:checked
+	~ .tesla-project-input:not(:checked)
+	~ main
+	.tesla-in,
+.projects-page-input:checked
+	~ .bg-shadow-trello-input:checked
+	~ .trello-project-input:not(:checked)
+	~ main
+	.trello-in {
 	visibility: visible;
 }
 
 .projects-page-input:checked
 	~ .discord-project-input:checked
 	~ main
-	.discord-link-in {
+	.discord-link-in,
+.projects-page-input:checked
+	~ .eltiempo-project-input:checked
+	~ main
+	.eltiempo-link-in,
+.projects-page-input:checked ~ .gtav-project-input:checked ~ main .gtav-link-in,
+.projects-page-input:checked
+	~ .tesla-project-input:checked
+	~ main
+	.tesla-link-in,
+.projects-page-input:checked
+	~ .trello-project-input:checked
+	~ main
+	.trello-link-in {
 	visibility: visible;
 }
 
