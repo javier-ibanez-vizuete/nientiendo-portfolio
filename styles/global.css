@@ -759,7 +759,7 @@ main {
 	padding: var(--spacing-xs);
 	border: 0.1rem dashed var(--text-color-bg);
 	background-color: var(--secondary-bg-color);
-	filter: brightness(80%);
+	filter: brightness(90%);
 }
 
 .projects-page-input:checked
@@ -769,7 +769,7 @@ main {
 	padding: var(--spacing-xs);
 	border: 0.1rem dashed var(--text-color-bg);
 	background-color: var(--secondary-bg-color);
-	filter: brightness(80%);
+	filter: brightness(90%);
 }
 
 .projects-page-input:checked
@@ -779,7 +779,7 @@ main {
 	padding: var(--spacing-xs);
 	border: 0.1rem dashed var(--text-color-bg);
 	background-color: var(--secondary-bg-color);
-	filter: brightness(80%);
+	filter: brightness(90%);
 }
 
 .projects-page-input:checked
@@ -789,7 +789,7 @@ main {
 	padding: var(--spacing-xs);
 	border: 0.1rem dashed var(--text-color-bg);
 	background-color: var(--secondary-bg-color);
-	filter: brightness(80%);
+	filter: brightness(90%);
 }
 
 .projects-page-input:checked
@@ -799,7 +799,7 @@ main {
 	padding: var(--spacing-xs);
 	border: 0.1rem dashed var(--text-color-bg);
 	background-color: var(--secondary-bg-color);
-	filter: brightness(80%);
+	filter: brightness(90%);
 }
 
 .projects-section article {
@@ -815,6 +815,41 @@ main {
 	bottom: 0;
 	left: 0;
 }
+
+.projects-section > article > h3 {
+	align-self: center;
+}
+
+.logo-github-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(90%);
+}
+
+.logo-container,
+.logo-container > picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-container {
+	width: 1.5rem;
+}
+
+.projects-page-input:checked
+	~ .discord-project-input:checked
+	~ main
+	.discord-project-display {
+	visibility: visible;
+}
+
 /* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
 .brand-shell-container {
 	display: flex;
@@ -1259,7 +1294,6 @@ main {
 	visibility: visible;
 }
 
-
 /* -----------ESTILOS/FUNCIONES PARA LOS BOTONES IZQUIERDA----------- */
 .left-button-container label {
 	visibility: hidden;
@@ -1321,7 +1355,7 @@ main {
 
 .projects-page-input:checked
 	~ .bg-shadow-discord-input:checked
-	~ .projects-displays-none:not(:checked)
+	~ .discord-project-input:not(:checked)
 	~ main
 	.eltiempo-down-shadow-button {
 	visibility: visible;
@@ -1329,7 +1363,7 @@ main {
 
 .projects-page-input:checked
 	~ .bg-shadow-eltiempo-input:checked
-	~ .projects-displays-none:not(:checked)
+	~ .eltiempo-project-input:not(:checked)
 	~ main
 	.gtav-down-shadow-button {
 	visibility: visible;
@@ -1337,7 +1371,7 @@ main {
 
 .projects-page-input:checked
 	~ .bg-shadow-gtav-input:checked
-	~ .projects-displays-none:not(:checked)
+	~ .gtav-project-input:not(:checked)
 	~ main
 	.tesla-down-shadow-button {
 	visibility: visible;
@@ -1345,7 +1379,7 @@ main {
 
 .projects-page-input:checked
 	~ .bg-shadow-tesla-input:checked
-	~ .projects-displays-none:not(:checked)
+	~ .tesla-project-input:not(:checked)
 	~ main
 	.trello-down-shadow-button {
 	visibility: visible;
@@ -1379,6 +1413,13 @@ main {
 	~ .projects-displays-none:not(:checked)
 	~ main
 	.page-projects-out {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .discord-project-input:checked
+	~ main
+	.discord-project-out {
 	visibility: visible;
 }
 
@@ -1430,6 +1471,22 @@ main {
 .nav-menu-input:checked ~ .shadow-projects-input:checked ~ main .projects-in {
 	visibility: visible;
 }
+
+.projects-page-input:checked
+	~ .bg-shadow-discord-input:checked
+	~ .discord-project-input:not(:checked)
+	~ main
+	.discord-in {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .discord-project-input:checked
+	~ main
+	.discord-link-in {
+	visibility: visible;
+}
+
 /* -----ESTILOS/FUNCIONES PARA LOS BOTONES SELECT Y ESTART---- */
 
 .power-input-off:checked ~ main .select-and-start-buttons-container label {
