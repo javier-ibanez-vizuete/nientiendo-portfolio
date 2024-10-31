@@ -1444,12 +1444,12 @@ main ::selection {
 
 .biography-page-input:checked
 	~ .biography-next-content-input:checked
-	~ .bg-shadow-linkedin-input
+	~ .bg-shadow-linkedin-input:checked
 	~ main
 	.linkedin-in,
 .biography-page-input:checked
 	~ .biography-next-content-input:checked
-	~ .bg-shadow-instagram-input
+	~ .bg-shadow-instagram-input:checked
 	~ main
 	.instagram-in {
 	visibility: visible;
