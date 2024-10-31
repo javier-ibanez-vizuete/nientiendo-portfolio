@@ -77,17 +77,23 @@
             id="next-content-experience-section-display" class="next-content-experience-input">
 
         <!-- ------------------SOMBRAS PARA LA SECCION DE PROYECTOS----------- -->
-        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-discord" checked>
-        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-eltiempo">
-        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-gtav">
-        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-tesla">
-        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-trello">
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-discord"
+            class="bg-shadow-discord-input" checked>
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-eltiempo"
+            class="bg-shadow-eltiempo-input">
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-gtav" class="bg-shadow-gtav-input">
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-tesla"
+            class="bg-shadow-tesla-input">
+        <input type="radio" name="bg-shadow-projects-section" id="bg-shadow-project-trello"
+            class="bg-shadow-trello-input">
 
-        <input type="checkbox" name="discord-project-display" id="discord-project-display">
-        <input type="checkbox" name="eltiempo-project-display" id="eltiempo-project-display">
-        <input type="checkbox" name="gtav-project-display" id="gtav-project-display">
-        <input type="checkbox" name="tesla-project-display" id="tesla-project-display">
-        <input type="checkbox" name="trello-project-display" id="trello-project-display">
+        <input type="checkbox" name="discord-project-display" id="discord-project-display"
+            class="projects-displays-none">
+        <input type="checkbox" name="eltiempo-project-display" id="eltiempo-project-display"
+            class="projects-displays-none">
+        <input type="checkbox" name="gtav-project-display" id="gtav-project-display" class="projects-displays-none">
+        <input type="checkbox" name="tesla-project-display" id="tesla-project-display" class="projects-displays-none">
+        <input type="checkbox" name="trello-project-display" id="trello-project-display" class="projects-displays-none">
 
         <!-- ------------------BOTONES-PARA LA SECCION DE HOBBIES--------------- -->
         <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-gaming" checked>
@@ -279,6 +285,55 @@
                                     </p>
                                 </div>
                             </section>
+
+                            <section class="projects-section">
+                                <div class="header-projects-section">
+                                    <h2>Projects</h2>
+
+                                    <ul class="portfolio-menu">
+                                        <li class="portfolio-menuitem-discord">
+                                            <h5>Discord</h5>
+                                        </li>
+                                        <li class="portfolio-menuitem-eltiempo">
+                                            <h5>Eltiempo</h5>
+                                        </li>
+                                        <li class="portfolio-menuitem-gtav">
+                                            <h5>Gta-v</h5>
+                                        </li>
+                                        <li class="portfolio-menuitem-tesla">
+                                            <h5>Tesla</h5>
+                                        </li>
+                                        <li class="portfolio-menuitem-trello">
+                                            <h5>Trello</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <article class="discord-project-display">
+                                    <h3>Discord</h3>
+                                    <p>
+                                        In this project, I aimed to create a replica of Discord's landing page, focusing
+                                        on the structure and design, while trying to refactor it and mantain
+                                        pixel-perfect accuracy to the original website.
+                                    </p>
+                                    <div class="logo-github-container">
+                                        <div class="logo-container">
+                                            <picture>
+                                                <source srcset="/media/logos/github/github-logo-pixel-200w.avif"
+                                                    type="image/avif">
+                                                <source srcset="/media/logos/github/github-logo-pixel-200w.webp"
+                                                    type="image/webp">
+                                                <source srcset="/media/logos/github/github-logo-pixel-200w.png"
+                                                    type="image/png">
+                                                <img src="/media/logos/github/github-logo-pixel.png"
+                                                    alt="Black Github Logo">
+                                            </picture>
+                                        </div>
+
+                                        <p>GITHUB</p>
+                                    </div>
+                                </article>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -347,6 +402,7 @@
                             <div class="b-button-container button-model">
                                 <label for="nav-menu-display" class="button-model page-biography-out"></label>
                                 <label for="nav-menu-display" class="button-model page-experience-out"></label>
+                                <label for="nav-menu-display" class="button-model page-projects-out"></label>
                                 <label for="next-content-experience-section-display"
                                     class="button-model experience-rocket-out"></label>
                                 <label for="projects-display" class="button-model"></label>

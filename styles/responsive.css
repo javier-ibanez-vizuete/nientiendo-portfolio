@@ -56,14 +56,13 @@
 	/* ------ESTILOS PARA EL EXTERIOR DE LA PANTALLA------ */
 	.outside-screen-container {
 		gap: 0.2rem;
-	
+
 		padding-bottom: var(--spacing-2xl);
 	}
 
 	.battery-led-and-inside-screen-container {
 		gap: 0.8rem;
 	}
-	
 
 	/* -------------ESTILOS PARA LA PANTALLA VERDE------- */
 	.inside-screen-and-sections-container {
@@ -75,7 +74,12 @@
 	.header-biography-section {
 		gap: 1.5rem;
 	}
-	
+
+	/* -----------ESTILOS PARA LA SECCION DE PROYECTOS--------- */
+	.header-projects-section {
+		gap: 2rem;
+	}
+
 
 	/* -----------ESTILOS PARA LA MARCA DE LA CARCASA-------- */
 	.nintendo-font {
@@ -165,15 +169,18 @@
 		font-size: 0.6rem;
 		line-height: 0.7rem;
 	}
-	
-	
+
 	/* -----------ESTILOS PARA LA SECCION DE EXPERIENCIA------------- */
 	.experience-section-next-content > p {
 		gap: 0.3rem;
-		
+
 		font-size: 0.6rem;
 	}
-	
+
+	/* ---------ESTILOS PARA LA SECCION DE PROYECTOS-------- */
+	.header-projects-section {
+		gap: 2rem;
+	}
 }
 /* Media query para dispositivos DESKTOP XXL (mayores a 1440px) */
 @media (min-width: 1440px) {

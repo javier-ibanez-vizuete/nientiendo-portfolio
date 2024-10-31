@@ -478,7 +478,7 @@ main {
 	bottom: 0;
 	left: 0;
 	visibility: hidden;
-	transition: visibility 0.1s ease;
+	transition: visibility 0.1s ease-in;
 }
 
 .navigation-menu {
@@ -706,6 +706,115 @@ main {
 	text-transform: uppercase;
 }
 
+/* -----------ESTIOS PARA LA SECCION PROYECTOS------------- */
+.projects-section {
+	display: flex;
+	justify-content: center;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	padding: var(--spacing-sm);
+	transition: visibility 0.1s ease-in;
+}
+
+.projects-page-input:checked ~ main .projects-section {
+	visibility: visible;
+}
+
+.header-projects-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.projects-page-input:checked
+	~ .projects-displays-none:checked
+	~ main
+	.header-projects-section {
+	visibility: hidden;
+}
+
+.portfolio-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.7rem;
+}
+
+.portfolio-menu > li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-discord-input:checked
+	~ main
+	.portfolio-menuitem-discord {
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(80%);
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-eltiempo-input:checked
+	~ main
+	.portfolio-menuitem-eltiempo {
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(80%);
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-gtav-input:checked
+	~ main
+	.portfolio-menuitem-gtav {
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(80%);
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-tesla-input:checked
+	~ main
+	.portfolio-menuitem-tesla {
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(80%);
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-trello-input:checked
+	~ main
+	.portfolio-menuitem-trello {
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(80%);
+}
+
+.projects-section article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	visibility: hidden;
+	padding: var(--spacing-sm);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
 /* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
 .brand-shell-container {
 	display: flex;
@@ -1090,24 +1199,66 @@ main {
 	visibility: hidden;
 }
 
-.shadow-experience-input:checked ~ main .biography-up-shadow-button {
-	visibility: visible;
-}
-
-.shadow-projects-input:checked ~ main .experience-up-shadow-button {
-	visibility: visible;
-}
-
-.shadow-hobbies-input:checked ~ main .projects-up-shadow-button {
-	visibility: visible;
-}
-
 .biography-page-input:checked
 	~ .biography-next-content-input:checked
 	~ main
 	.biography-header-section-up {
 	visibility: visible;
 }
+
+.nav-menu-input:checked
+	~ .shadow-experience-input:checked
+	~ main
+	.biography-up-shadow-button {
+	visibility: visible;
+}
+
+.nav-menu-input:checked
+	~ .shadow-projects-input:checked
+	~ main
+	.experience-up-shadow-button {
+	visibility: visible;
+}
+
+.nav-menu-input:checked
+	~ .shadow-hobbies-input:checked
+	~ main
+	.projects-up-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-trello-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.tesla-up-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-tesla-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.gtav-up-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-gtav-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.eltiempo-up-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-eltiempo-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.discord-up-shadow-button {
+	visibility: visible;
+}
+
 
 /* -----------ESTILOS/FUNCIONES PARA LOS BOTONES IZQUIERDA----------- */
 .left-button-container label {
@@ -1140,25 +1291,63 @@ main {
 	visibility: hidden;
 }
 
-.shadow-biography-input:checked
-	~ .biography-page-input:not(:checked)
+.biography-page-input:checked
+	~ .biography-header-input:checked
+	~ main
+	.biography-more-content-down {
+	visibility: visible;
+}
+
+.nav-menu-input:checked
+	~ .shadow-biography-input:checked
 	~ main
 	.experience-down-shadow-button {
 	visibility: visible;
 }
 
-.shadow-experience-input:checked ~ main .projects-down-shadow-button {
-	visibility: visible;
-}
-
-.shadow-projects-input:checked ~ main .hobbies-down-shadow-button {
-	visibility: visible;
-}
-
-.biography-page-input:checked
-	~ .biography-header-input:checked
+.nav-menu-input:checked
+	~ .shadow-experience-input:checked
 	~ main
-	.biography-more-content-down {
+	.projects-down-shadow-button {
+	visibility: visible;
+}
+
+.nav-menu-input:checked
+	~ .shadow-projects-input:checked
+	~ main
+	.hobbies-down-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-discord-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.eltiempo-down-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-eltiempo-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.gtav-down-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-gtav-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.tesla-down-shadow-button {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .bg-shadow-tesla-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.trello-down-shadow-button {
 	visibility: visible;
 }
 
@@ -1183,6 +1372,13 @@ main {
 	~ .next-content-experience-input:not(:checked)
 	~ main
 	.page-experience-out {
+	visibility: visible;
+}
+
+.projects-page-input:checked
+	~ .projects-displays-none:not(:checked)
+	~ main
+	.page-projects-out {
 	visibility: visible;
 }
 
@@ -1228,6 +1424,10 @@ main {
 	~ .next-content-experience-input:not(:checked)
 	~ main
 	.experience-rocket-in {
+	visibility: visible;
+}
+
+.nav-menu-input:checked ~ .shadow-projects-input:checked ~ main .projects-in {
 	visibility: visible;
 }
 /* -----ESTILOS/FUNCIONES PARA LOS BOTONES SELECT Y ESTART---- */
