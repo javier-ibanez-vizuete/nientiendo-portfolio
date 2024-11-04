@@ -163,6 +163,113 @@ input {
 	display: none;
 }
 
+/* ----------------ESTILOS DEL MODAL DE AYUDA------------- */
+.helping-user-modal-container {
+	display: flex;
+	justify-content: center;
+
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	transition: transform 1.5s ease-in-out, visibility 1.5s ease-in-out, opacity 2s ease-in-out;
+}
+
+.closing-modal {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0%;
+	z-index: 1000;
+}
+
+.helping-user-input:checked ~ .helping-user-modal-container .closing-modal {
+	display: block;
+}
+
+.helping-user-input:not(:checked)
+	~ .helping-user-modal-container
+	.closing-modal {
+	display: none;
+}
+
+.helping-user-input:checked ~ .helping-user-modal-container {
+	visibility: visible;
+	transform: rotate(-720deg) scale(1);
+	opacity: 100%;
+}
+
+.helping-user-input:not(:checked) ~ .helping-user-modal-container {
+	visibility: hidden;
+	transform: rotate(0deg) scale(0.5);
+	opacity: 0%;
+}
+
+.helping-user-input:checked ~ main {
+	filter: blur(2px) grayscale(100);
+}
+
+.helping-message-and-image-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1;
+
+	padding-top: var(--spacing-4xl);
+}
+
+.helping-message-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+	flex: 1;
+
+	clip-path: polygon(
+		0% 0%,
+		100% 0%,
+		100% 83%,
+		69% 84%,
+		57% 100%,
+		52% 83%,
+		0 83%
+	);
+	box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+	background-color: var(--text-color);
+	padding: var(--spacing-2xl);
+	padding-top: var(--spacing-xl);
+	padding-bottom: var(--spacing-4xl);
+}
+
+.helping-message-container h2 {
+	font-size: 2rem;
+	color: var(--bg-color);
+}
+
+.helping-message-container p {
+	font-size: 1rem;
+	color: var(--bg-color);
+	font-family: "Chau Philomene One";
+}
+
+.juario-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex: 1;
+
+	max-width: 25rem;
+}
+
+/* -------------------ESTILOS PARA LA GAMEBOY---------------- */
 main {
 	display: flex;
 	flex-direction: column;
@@ -852,6 +959,120 @@ main {
 	visibility: visible;
 }
 
+/* ---------ESTILOS PARA LA SECCION DE HOBBIES---------------- */
+.hobbies-section {
+	display: flex;
+	justify-content: center;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	padding: var(--spacing-sm);
+	transition: visibility 0.1s ease-in;
+}
+
+.hobbies-page-input:checked ~ main .hobbies-section {
+	visibility: visible;
+}
+
+.header-hobbies-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.hobbies-page-input:checked
+	~ .hobby-display-post:checked
+	~ main
+	.header-hobbies-section {
+	visibility: hidden;
+}
+
+.hobbies-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.7rem;
+}
+
+.hobbies-menu > li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hobbies-menu > li > h5 {
+	text-transform: uppercase;
+}
+
+.hobbies-page-input:checked
+	~ .bg-shadow-gaming-input:checked
+	~ main
+	.hobbies-menuitem-gaming,
+.hobbies-page-input:checked
+	~ .bg-shadow-sport-input:checked
+	~ main
+	.hobbies-menuitem-sport {
+	padding: var(--spacing-xs);
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(90%);
+}
+
+.hobbies-section article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	visibility: hidden;
+	padding: var(--spacing-sm);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.hobby-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 8rem;
+}
+
+.xxl-hobby-image {
+	width: 14rem;
+}
+
+.hobby-image-container > picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hobby-image-container > picture > img {
+	filter: grayscale(100%);
+}
+
+.hobbies-page-input:checked
+	~ .bg-shadow-gaming-input:checked
+	~ .gaming-post-input:checked
+	~ main
+	.gaming-hobby-post,
+.hobbies-page-input:checked
+	~ .bg-shadow-sport-input:checked
+	~ .sport-post-input:checked
+	~ main
+	.sport-hobby-post {
+	visibility: visible;
+}
+
 /* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
 .brand-shell-container {
 	display: flex;
@@ -1296,6 +1517,14 @@ main {
 	visibility: visible;
 }
 
+.hobbies-page-input:checked
+	~ .bg-shadow-sport-input:checked
+	~ .sport-post-input:not(:checked)
+	~ main
+	.gaming-up-shadow-button {
+	visibility: visible;
+}
+
 /* -----------ESTILOS/FUNCIONES PARA LOS BOTONES IZQUIERDA----------- */
 .left-button-container label {
 	visibility: hidden;
@@ -1372,6 +1601,14 @@ main {
 	visibility: visible;
 }
 
+.hobbies-page-input:checked
+	~ .bg-shadow-gaming-input:checked
+	~ .gaming-post-input:not(:checked)
+	~ main
+	.sport-down-shadow-button {
+	visibility: visible;
+}
+
 /* ------------------ESTILOS/FUNCIONES PARA EL BOTON SALIR (B)------------------ */
 .b-button-container > label {
 	visibility: hidden;
@@ -1393,7 +1630,11 @@ main {
 .projects-page-input:checked
 	~ .projects-displays-none:not(:checked)
 	~ main
-	.page-projects-out {
+	.page-projects-out,
+.hobbies-page-input:checked
+	~ .hobby-display-post:not(:checked)
+	~ main
+	.page-hobbies-out {
 	visibility: visible;
 }
 
@@ -1420,7 +1661,18 @@ main {
 	visibility: visible;
 }
 
-/* ------------------ESTILOS/FUNCIONES PARA EL BOTON ENTRAR (a)------------------ */
+.hobbies-page-input:checked
+	~ .gaming-post-input:checked
+	~ main
+	.gaming-hobby-out,
+.hobbies-page-input:checked
+	~ .sport-post-input:checked
+	~ main
+	.sport-hobby-out {
+	visibility: visible;
+}
+
+/* ------------------ESTILOS/FUNCIONES PARA EL BOTON ENTRAR (A)------------------ */
 .a-button-container a {
 	display: block;
 }
@@ -1435,7 +1687,8 @@ main {
 	~ .shadow-experience-input:checked
 	~ main
 	.experience-in,
-.nav-menu-input:checked ~ .shadow-projects-input:checked ~ main .projects-in {
+.nav-menu-input:checked ~ .shadow-projects-input:checked ~ main .projects-in,
+.nav-menu-input:checked ~ .shadow-hobbies-input:checked ~ main .hobbies-in {
 	visibility: visible;
 }
 
@@ -1505,6 +1758,11 @@ main {
 	~ .trello-project-input:checked
 	~ main
 	.trello-link-in {
+	visibility: visible;
+}
+
+.hobbies-page-input:checked ~ .bg-shadow-gaming-input:checked ~ main .gaming-in,
+.hobbies-page-input:checked ~ .bg-shadow-sport-input:checked ~ main .sport-in {
 	visibility: visible;
 }
 

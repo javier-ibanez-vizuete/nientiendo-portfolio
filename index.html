@@ -43,6 +43,8 @@
 
 <body>
     <div class="body-container">
+        <input type="checkbox" name="Helping-user-modal" id="helping-user-modal" class="helping-user-input" checked>
+
         <input type="radio" name="screen-estates" id="power-conection-off" class="power-input-off" checked>
         <input type="radio" name="screen-estates" id="power-conection-on" class="power-input-on">
         <input type="radio" name="screen-estates" id="nav-menu-display" class="nav-menu-input">
@@ -99,12 +101,52 @@
             class="projects-displays-none trello-project-input">
 
         <!-- ------------------BOTONES-PARA LA SECCION DE HOBBIES--------------- -->
-        <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-gaming" checked>
-        <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-sport">
+        <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-gaming" class="bg-shadow-gaming-input"
+            checked>
+        <input type="radio" name="bg-shadow-hobbies-section" id="bg-shadow-hobby-sport" class="bg-shadow-sport-input">
 
-        <input type="checkbox" name="gaming-hobby-display" id="gaming-hobby-display">
-        <input type="checkbox" name="sport-hobby-display" id="sport-hobby-display">
+        <input type="checkbox" name="gaming-hobby-display" id="gaming-hobby-display"
+            class="hobby-display-post gaming-post-input">
+        <input type="checkbox" name="sport-hobby-display" id="sport-hobby-display"
+            class="hobby-display-post sport-post-input">
 
+        <!--------------------------- ESTILOS PARA EL MODAL DE AYUDA---------------------------- -->
+        <div class="helping-user-modal-container">
+            <label for="helping-user-modal" class="closing-modal"></label>
+            <div class="helping-message-and-image-container">
+                <div class="helping-message-container">
+                    <h2>Hello!</h2>
+                    <p>My name is Juario, and I'm here to help you.</p>
+                    <p>
+                        To start enjoying the legendary Gameboy experience, press the little white button at the top of
+                        the Gameboy.
+                    </p>
+                    <p>(Tap anywhere on the screen to make me disappear)</p>
+                </div>
+
+                <div class="juario-image-container">
+                    <picture>
+                        <source srcset="/media/images/juario-message/Juario-say-hello-480w.avif"
+                            media="(max-width: 800px)" type="image/avif">
+                        <source srcset="/media/images/juario-message/Juario-say-hello-800w.avif"
+                            media="(max-width: 1800px)" type="image/avif">
+
+                        <source srcset="/media/images/juario-message/Juario-say-hello-480w.webp"
+                            media="(max-width: 800px)" type="image/webp">
+                        <source srcset="/media/images/juario-message/Juario-say-hello-800w.webp"
+                            media="(max-width: 1800px)" type="image/webp">
+
+                        <source srcset="/media/images/juario-message/Juario-say-hello-480w.png"
+                            media="(max-width: 800px)" type="image/png">
+                        <source srcset="/media/images/juario-message/Juario-say-hello-800w.png"
+                            media="(max-width: 1800px)" type="image/png">
+                        <img src="/media/images/juario-message/Juario-say-hello.png" alt="Juario Bross Saludando">
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------ESTILOS PARA LA GAMEBOY------------------ -->
         <main class="container">
             <div class="power-switch-container">
                 <label for="power-conection-off" class="power-label-off"></label>
@@ -446,6 +488,75 @@
                                     </div>
                                 </article>
                             </section>
+
+                            <section class="hobbies-section">
+                                <div class="header-hobbies-section">
+                                    <h2>Hobbies</h2>
+
+                                    <ul class="hobbies-menu">
+                                        <li class="hobbies-menuitem-gaming">
+                                            <h4>Gaming</h4>
+                                        </li>
+                                        <li class="hobbies-menuitem-sport">
+                                            <h4>Sport</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <article class="gaming-hobby-post">
+                                    <h4>Gaming</h4>
+                                    <div class="hobby-image-container xxl-hobby-image">
+                                        <picture>
+                                            <source
+                                                srcset="/media/images/hobbies-page/gaming/hobby-gaming-twitch-480w.avif"
+                                                media="(max-width: 480px)" type="image/avif">
+                                            <source
+                                                srcset="/media/images/hobbies-page/gaming/hobby-gaming-twitch-800w.avif"
+                                                media="(max-width: 800px)" type="image/avif">
+
+                                            <source
+                                                srcset="/media/images/hobbies-page/gaming/hobby-gaming-twitch-480w.webp"
+                                                media="(max-width: 480px)" type="image/webp">
+                                            <source
+                                                srcset="/media/images/hobbies-page/gaming/hobby-gaming-twitch-800w.webp"
+                                                media="(max-width: 800px)" type="image/webp">
+
+                                            <source
+                                                srcset="/media/images/hobbies-page/gaming/hobby-gaming-twitch-480w.jpg"
+                                                media="(max-width: 480px)" type="image/jpg">
+                                            <source
+                                                srcset="/media/images/hobbies-page/gaming/hobby-gaming-twitch-800w.jpg"
+                                                media="(max-width: 800px)" type="image/jpg">
+                                            <img src="/media/images/hobbies-page/gaming/hobby-gaming-twitch.png"
+                                                alt="Un chico fotografiandose delante de un cartel de Twitch">
+                                        </picture>
+                                    </div>
+
+                                    <p>Live Streams on Twitch</p>
+                                </article>
+
+                                <article class="sport-hobby-post">
+                                    <h4>Sport</h4>
+
+                                    <div class="hobby-image-container">
+                                        <picture>
+                                            <source
+                                                srcset="/media/images/hobbies-page/sports/image-hobby-sport-parachuting-200w.avif"
+                                                media="(max-width: 800px)" type="image/avif">
+                                            <source
+                                                srcset="/media/images/hobbies-page/sports/image-hobby-sport-parachuting-200w.webp"
+                                                media="(max-width: 800px)" type="image/webp">
+                                            <source
+                                                srcset="/media/images/hobbies-page/sports/image-hobby-sport-parachuting-200w.png"
+                                                media="(max-width: 800px)" type="image/png">
+                                            <img src="/media/images/hobbies-page/sports/image-hobby-sport-parachuting.png"
+                                                alt="A pixel guys doing parachuting">
+                                        </picture>
+                                    </div>
+
+                                    <p>Adventure Sports</p>
+                                </article>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -515,14 +626,19 @@
                                 <label for="nav-menu-display" class="button-model page-biography-out"></label>
                                 <label for="nav-menu-display" class="button-model page-experience-out"></label>
                                 <label for="nav-menu-display" class="button-model page-projects-out"></label>
+                                <label for="nav-menu-display" class="button-model page-hobbies-out"></label>
+
                                 <label for="next-content-experience-section-display"
                                     class="button-model experience-rocket-out"></label>
+
                                 <label for="discord-project-display" class="button-model discord-project-out"></label>
                                 <label for="eltiempo-project-display" class="button-model eltiempo-project-out"></label>
                                 <label for="gtav-project-display" class="button-model gtav-project-out"></label>
                                 <label for="tesla-project-display" class="button-model tesla-project-out"></label>
                                 <label for="trello-project-display" class="button-model trello-project-out"></label>
-                                <label for="hobbies-display" class="button-model"></label>
+
+                                <label for="gaming-hobby-display" class="button-model gaming-hobby-out"></label>
+                                <label for="sport-hobby-display" class="button-model sport-hobby-out"></label>
                             </div>
 
                             <p>B</p>
@@ -532,17 +648,21 @@
                             <div class="a-button-container button-model">
                                 <label for="biography-display" class="button-model biography-in"></label>
                                 <label for="experience-display" class="button-model experience-in"></label>
-                                <label for="next-content-experience-section-display"
-                                    class="button-model experience-rocket-in"></label>
                                 <label for="projects-display" class="button-model projects-in"></label>
                                 <label for="hobbies-display" class="button-model hobbies-in"></label>
+
+                                <label for="next-content-experience-section-display"
+                                    class="button-model experience-rocket-in"></label>
+
                                 <label for="discord-project-display" class="button-model discord-in"></label>
                                 <label for="eltiempo-project-display" class="button-model eltiempo-in"></label>
                                 <label for="gtav-project-display" class="button-model gtav-in"></label>
                                 <label for="tesla-project-display" class="button-model tesla-in"></label>
                                 <label for="trello-project-display" class="button-model trello-in"></label>
+
                                 <label for="gaming-hobby-display" class="button-model gaming-in"></label>
                                 <label for="sport-hobby-display" class="button-model sport-in"></label>
+
                                 <a href="https://www.linkedin.com/in/javier-ibanez-vizuete/" target="_blank"
                                     class="button-model linkedin-in"></a>
                                 <a href="https://www.instagram.com/eljaviersiclaro/" target="_blank"

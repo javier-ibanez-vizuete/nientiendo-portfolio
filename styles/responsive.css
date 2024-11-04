@@ -39,7 +39,27 @@
 		font-size: 0.5rem;
 	}
 
-	/* -----------------MAIN------------ */
+	/* ----------------ESTILOS PARA EL MENSAGE DE AYUDA------- */
+	.helping-message-and-image-container {
+		gap: 1rem;
+	}
+
+	.helping-message-container {
+		align-self: center;
+		
+		max-width: 40rem;
+		clip-path: polygon(
+			0% 0%,
+			100% 0%,
+			96% 73%,
+			65% 76%,
+			57% 100%,
+			53% 75%,
+			3% 73%
+		);
+	}
+
+	/* -----------------ESTILOS PARA LA GAMEBOY------------ */
 	main {
 		max-width: 26rem;
 		max-height: 42rem;
@@ -80,7 +100,8 @@
 		gap: 2rem;
 	}
 
-	.tesla-project-display > p, .trello-project-display > p {
+	.tesla-project-display > p,
+	.trello-project-display > p {
 		font-size: 0.5rem;
 	}
 
@@ -185,7 +206,8 @@
 		gap: 2rem;
 	}
 
-	.tesla-project-display > p, .trello-project-display > p {
+	.tesla-project-display > p,
+	.trello-project-display > p {
 		font-size: 0.5rem;
 	}
 }
