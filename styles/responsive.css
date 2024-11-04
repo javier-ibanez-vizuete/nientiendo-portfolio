@@ -46,17 +46,22 @@
 
 	.helping-message-container {
 		align-self: center;
-		
+
 		max-width: 40rem;
 		clip-path: polygon(
 			0% 0%,
 			100% 0%,
-			96% 73%,
-			65% 76%,
+			100% 85%,
+			75% 88%,
 			57% 100%,
-			53% 75%,
-			3% 73%
+			49% 89%,
+			0 86%
 		);
+	}
+
+	/* ---------------ESTILOS PARA SUPERJUARIO POINTER-------- */
+	.superjuario-image-container {
+		max-width: 25rem;
 	}
 
 	/* -----------------ESTILOS PARA LA GAMEBOY------------ */
@@ -162,6 +167,34 @@
 		font-size: 0.5rem;
 	}
 
+	.mobile-and-tablet-label {
+		display: none;
+	}
+
+	.desktop-and-xxl-label {
+		display: unset;
+	}
+
+	/* --------------ESTILOS LABEL AYUDA PARA DESKTOP Y XXL--------- */
+	.helping-label-container {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: unset;
+		padding: var(--spacing-xl);
+	}
+
+	.desktop-and-xxl-label {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex: 1;
+		transition: all 0.5s ease-in-out;
+	}
+
+	.desktop-and-xxl-label:hover {
+		transform: scaleY(1.1);
+	}
 	/* ---------------MAIN------------------ */
 	main {
 		max-width: 27rem;
@@ -230,6 +263,10 @@
 		--radius-4xl: 60px;
 
 		--button-padding-xs: 2px 4px;
+	}
+	/* ----------------ESTILOS PARA LABEL AYUDA XXL---------------- */
+	.helping-label-container {
+		padding: var(--spacing-4xl);
 	}
 
 	/* -----------MAIN-------------- */

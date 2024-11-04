@@ -150,6 +150,18 @@ img {
 	margin: 0 auto;
 }
 
+.mobile-and-tablet-label {
+	display: unset;
+}
+
+.desktop-and-xxl-label {
+	display: none;
+}
+
+body {
+	overflow: hidden;
+}
+
 /* -------------ESTILOS WEB--------------- */
 .body-container {
 	display: flex;
@@ -157,10 +169,45 @@ img {
 	justify-content: center;
 
 	background-color: black;
+	overflow: hidden;
 }
 
 input {
 	display: none;
+}
+
+/* --------------ESTILOS LABEL AYUDA PARA MOBILE---------- */
+.helping-label-container {
+	display: flex;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	padding: var(--spacing-sm);
+}
+
+.helping-user-input:checked ~ .helping-label-container {
+	display: none;
+}
+
+.power-input-off:checked ~ .helping-label-container {
+	display: none;
+}
+
+.mobile-and-tablet-label {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex: 1;
+}
+
+.mobile-and-tablet-label > h2 {
+	color: var(--bg-color);
+	padding: var(--spacing-sm);
+	background-color: var(--text-color);
+	border-radius: var(--radius);
 }
 
 /* ----------------ESTILOS DEL MODAL DE AYUDA------------- */
@@ -175,7 +222,8 @@ input {
 	bottom: 0;
 	left: 0;
 	z-index: 2;
-	transition: transform 1.5s ease-in-out, visibility 1.5s ease-in-out, opacity 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out, visibility 1.5s ease-in-out,
+		opacity 1.5s ease-in-out;
 }
 
 .closing-modal {
@@ -223,7 +271,23 @@ input {
 	align-items: center;
 	flex: 1;
 
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
 	padding-top: var(--spacing-4xl);
+}
+
+.helping-user-input:checked
+	~ .power-input-off:checked
+	~ .helping-user-modal-container
+	> .helping-message-and-image-container {
+	visibility: visible;
+}
+
+.power-input-off:not(:checked)
+	~ .helping-user-modal-container
+	> .helping-message-and-image-container {
+	visibility: hidden;
 }
 
 .helping-message-container {
@@ -267,6 +331,71 @@ input {
 	flex: 1;
 
 	max-width: 25rem;
+}
+
+/* ----------------------ESTILOS DEL MODAL DE AYUDA CON LA CONSOLA----------- */
+.superjuario-pointer-help-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.helping-user-input:checked
+	~ .power-input-off:not(:checked)
+	~ .helping-user-modal-container
+	> .superjuario-pointer-help-container {
+	visibility: visible;
+}
+
+.message-for-helping {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	clip-path: polygon(
+		0% 0%,
+		100% 0%,
+		100% 85%,
+		75% 88%,
+		77% 100%,
+		49% 89%,
+		0 86%
+	);
+	box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
+	background-color: var(--text-color);
+	padding: var(--spacing-2xl);
+	padding-top: var(--spacing-xl);
+	padding-bottom: var(--spacing-4xl);
+}
+
+.message-for-helping > p {
+	font-size: 1rem;
+	color: var(--bg-color);
+	font-family: "Chau Philomene One";
+	text-align: center;
+}
+
+.message-for-helping span {
+	font-size: 1.5rem;
+	color: var(--bg-color);
+	font-family: "Puritan";
+}
+
+.superjuario-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	max-width: 20rem;
+	margin-right: -15rem;
 }
 
 /* -------------------ESTILOS PARA LA GAMEBOY---------------- */
