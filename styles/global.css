@@ -270,7 +270,8 @@ input {
 	position: absolute;
 	bottom: 0;
 	padding-top: var(--spacing-4xl);
-	transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+	transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out,
+		visibility 1.5s ease-in-out;
 	transform: rotate(360deg) scale(0.1);
 	opacity: 0%;
 }
@@ -352,6 +353,7 @@ input {
 
 .helping-user-input:checked
 	~ .power-input-off:not(:checked)
+	~ .power-input-on:checked
 	~ .helping-user-modal-container
 	> .superjuario-pointer-help-container {
 	visibility: visible;
@@ -373,7 +375,7 @@ input {
 		0 86%
 	);
 	box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
-	background-color: #F3CB22;
+	background-color: #f3cb22;
 	padding: var(--spacing-2xl);
 	padding-top: var(--spacing-xl);
 	padding-bottom: var(--spacing-4xl);
@@ -405,7 +407,8 @@ input {
 	gap: 0.1rem;
 }
 
-.button-image-container, .button-image-container > picture  {
+.button-image-container,
+.button-image-container > picture {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -417,7 +420,7 @@ input {
 
 .button-image-container + p {
 	flex: 1;
-	
+
 	font-size: 0.6rem;
 	color: var(--text-color);
 }
