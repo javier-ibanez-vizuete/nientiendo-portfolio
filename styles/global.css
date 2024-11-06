@@ -222,8 +222,7 @@ input {
 	bottom: 0;
 	left: 0;
 	z-index: 2;
-	transition: transform 1.5s ease-in-out, visibility 1.5s ease-in-out,
-		opacity 1.5s ease-in-out;
+	transition: visibility 1.5s ease-in-out;
 }
 
 .closing-modal {
@@ -250,14 +249,10 @@ input {
 
 .helping-user-input:checked ~ .helping-user-modal-container {
 	visibility: visible;
-	transform: rotate(-720deg) scale(1);
-	opacity: 100%;
 }
 
 .helping-user-input:not(:checked) ~ .helping-user-modal-container {
 	visibility: hidden;
-	transform: rotate(360deg) scale(0.5);
-	opacity: 0%;
 }
 
 .helping-user-input:checked ~ main {
@@ -275,6 +270,9 @@ input {
 	position: absolute;
 	bottom: 0;
 	padding-top: var(--spacing-4xl);
+	transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+	transform: rotate(360deg) scale(0.1);
+	opacity: 0%;
 }
 
 .helping-user-input:checked
@@ -282,12 +280,16 @@ input {
 	~ .helping-user-modal-container
 	> .helping-message-and-image-container {
 	visibility: visible;
+	transform: rotate(-720deg) scale(1);
+	opacity: 100%;
 }
 
 .power-input-off:not(:checked)
 	~ .helping-user-modal-container
 	> .helping-message-and-image-container {
 	visibility: hidden;
+	/* transform: rotate(360deg) scale(0.1);
+	opacity: 0%; */
 }
 
 .helping-message-container {
@@ -559,7 +561,6 @@ main {
 	display: flex;
 
 	padding: 0 1.5rem;
-	/* background-color: var(--bg-color); */
 }
 
 .outside-screen-container {
@@ -943,7 +944,7 @@ main {
 	text-transform: uppercase;
 }
 
-/* -----------ESTIOS PARA LA SECCION PROYECTOS------------- */
+/* -----------ESTILOS PARA LA SECCION PROYECTOS------------- */
 .projects-section {
 	display: flex;
 	justify-content: center;
@@ -1209,7 +1210,6 @@ main {
 	gap: 0.1rem;
 
 	padding: var(--spacing-xs) 1.5rem;
-	/* background-color: var(--bg-color); */
 }
 
 .nintendo-font,
@@ -1254,7 +1254,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 }
-/* --------ESTILOS PARA LOS BOTONES DIRECCIONALES */
+/* --------ESTILOS PARA LOS BOTONES DIRECCIONALES-------- */
 .directionals-buttons-container {
 	display: flex;
 	flex-direction: column;
@@ -1519,7 +1519,6 @@ main {
 	justify-content: flex-end;
 	align-items: center;
 
-	/* background-color: var(--bg-color); */
 	padding: var(--spacing-lg);
 }
 
@@ -1545,7 +1544,7 @@ main {
 	border-radius: var(--radius-4xl);
 }
 
-.Black-speaker-line {
+.black-speaker-line {
 	height: 3rem;
 	width: 0.1rem;
 	background-color: #333333;
@@ -1560,7 +1559,6 @@ main {
 	align-items: center;
 
 	padding: var(--spacing-sm);
-	/* background-color: var(--bg-color); */
 }
 
 .headphone-container {
