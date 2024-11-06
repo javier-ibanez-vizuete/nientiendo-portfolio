@@ -184,16 +184,21 @@
 		padding: var(--spacing-xl);
 	}
 
+	@keyframes jumping-box {
+		0% {transform: translate(0) scale(1);}
+		25% {transform: translateY(-2rem);}
+		50% {transform: translateY(0rem);}
+		75% {transform: translateY(-4rem) scale(1.1);}
+		100% {transform: translateY(0);}
+	}
+
 	.desktop-and-xxl-label {
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
 		flex: 1;
 		transition: all 0.5s ease-in-out;
-	}
-
-	.desktop-and-xxl-label:hover {
-		transform: scaleY(1.1);
+		animation: jumping-box 1.5s ease-in-out 0s infinite;
 	}
 	/* ---------------MAIN------------------ */
 	main {
