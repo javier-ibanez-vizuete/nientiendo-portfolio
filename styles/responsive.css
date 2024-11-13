@@ -60,6 +60,11 @@
 	}
 
 	/* ---------------ESTILOS PARA SUPERJUARIO POINTER-------- */
+	.message-for-helping {
+		gap: 0.1rem;
+	}
+	
+	
 	.superjuario-image-container {
 		max-width: 25rem;
 	}
@@ -174,6 +179,19 @@
 	.desktop-and-xxl-label {
 		display: unset;
 	}
+
+	/* -----------------ESTILOS PARA SUPERJUARIO POINTER------------ */
+	.message-for-helping {
+		justify-content: flex-end;
+		gap: 0.1rem;
+
+		padding-bottom: var(--spacing-3xl);
+	}
+
+	.button-image-container {
+		width: 2.5rem;
+	}
+	
 
 	/* --------------ESTILOS LABEL AYUDA PARA DESKTOP Y XXL--------- */
 	.helping-label-container {

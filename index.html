@@ -44,12 +44,14 @@
         <input type="radio" name="bg-shadow-nav" id="bg-shadow-experience" class="shadow-experience-input">
         <input type="radio" name="bg-shadow-nav" id="bg-shadow-projects" class="shadow-projects-input">
         <input type="radio" name="bg-shadow-nav" id="bg-shadow-hobbies" class="shadow-hobbies-input">
+        <input type="radio" name="bg-shadow-nav" id="bg-shadow-contact" class="shadow-contact-input">
 
-        <!-- --------------------BOTONES PARA ABRIR LAS SECCIONES--------- -->
+        <!-- --------------------INPUTS PARA ABRIR LAS SECCIONES--------- -->
         <input type="radio" name="screen-estates" id="biography-display" class="biography-page-input">
         <input type="radio" name="screen-estates" id="experience-display" class="experience-page-input">
         <input type="radio" name="screen-estates" id="projects-display" class="projects-page-input">
         <input type="radio" name="screen-estates" id="hobbies-display" class="hobbies-page-input">
+        <input type="radio" name="screen-estates" id="contact-display" class="contact-page-input">
 
         <!-- --------------------BOTONES PARA LA SECCION DE BIOGRAFIA------- -->
         <input type="radio" name="biography-section-display" id="biography-section-header-display"
@@ -123,6 +125,11 @@
             </div>
         </label>
 
+        <!-- --------------------ESTILOS PARA LA SECCION DE CONTACT ---------------------->
+        <input type="radio" name="bg-shadow-contact-section" id="bg-shadow-contact-linkedin" class="bg-shadow-linkedin-contact-input">
+        <input type="radio" name="bg-shadow-contact-section" id="bg-shadow-contact-instagram" class="bg-shadow-instagram-contact-input">
+        <input type="radio" name="bg-shadow-contact-section" id="bg-shadow-contact-email" class="bg-shadow-email-contact-input">
+
         <!--------------------------- ESTILOS PARA EL MODAL DE AYUDA---------------------------- -->
         <div class="helping-user-modal-container">
             <label for="helping-user-modal" class="closing-modal"></label>
@@ -162,7 +169,7 @@
             <div class="superjuario-pointer-help-container">
                 <div class="message-for-helping">
                     <p>
-                        Use those buttons to control the <span>GAMEBOY</span>.
+                        Use those buttons to control my <span>RETRO PORTFOLIO.</span>
                     </p>
 
                     <ul class="how-to-use-buttons-container">
@@ -174,7 +181,7 @@
                                     <img src="/media/images/buttons/directionals-buttons.png" alt="Directionals buttons of a classic gameboy">
                                 </picture>
                             </div>
-                            <p>Use the directional buttons to navigate through the Gameboy.</p>
+                            <p>Use the directional buttons to navigate through the Curriculum.</p>
                         </li>
                         <li>
                             <div class="button-image-container">
@@ -184,7 +191,7 @@
                                     <img src="/media/images/buttons/exit-b-button.png" alt="Red button on top of a B letter">
                                 </picture>
                             </div>
-                            <p>Use the B button to exit menus</p>
+                            <p>Press B to exit menus</p>
                         </li>
                         <li>
                             <div class="button-image-container">
@@ -194,7 +201,7 @@
                                     <img src="/media/images/buttons/enter-a-button.png" alt="Red button on top of a A letter">
                                 </picture>
                             </div>
-                            <p>Use the A button to enter menus</p>
+                            <p>Press A to choise options</p>
                         </li>
                         <li>
                             <div class="button-image-container">
@@ -204,7 +211,7 @@
                                     <img src="/media/images/buttons/select-button.png" alt="A grey button on top of a Select Word">
                                 </picture>
                             </div>
-                            <p>Use the Select Button to move to Welcome Screen</p>
+                            <p>With Select Button You'll go back to Welcome Menu</p>
                         </li>
                         <li>
                             <div class="button-image-container">
@@ -329,6 +336,9 @@
                                     <li class="navigation-menu-item-hobbies">
                                         <h4>Hobbies</h4>
                                     </li>
+                                    <li class="navigation-menu-item-contact">
+                                        <h4>Contact</h4>
+                                    </li>
                                 </ul>
                             </nav>
 
@@ -382,26 +392,28 @@
                                         <div class="logo-linkedin-container">
                                             <picture>
                                                 <source srcset="/media/logos/linkedin/logo-linkedin-200w.avif"
-                                                    type="image/avif">
+                                                type="image/avif">
                                                 <source srcset="/media/logos/linkedin/logo-linkedin-200w.webp"
-                                                    type="image/webp">
+                                                type="image/webp">
                                                 <source srcset="/media/logos/linkedin/logo-linkedin-200w.png"
-                                                    type="image/png">
+                                                type="image/png">
                                                 <img src="/media/logos/linkedin/logo-linkedin.png" alt="Instagram logo">
                                             </picture>
+                                            <a href="https://www.linkedin.com/in/javier-ibanez-vizuete/" target="_blank"></a>
                                         </div>
-
+                                        
                                         <div class="logo-instagram-container">
                                             <picture>
                                                 <source srcset="/media/logos/instagram/logo-instagram-200w.avif"
-                                                    type="image/avif">
+                                                type="image/avif">
                                                 <source srcset="/media/logos/instagram/logo-instagram-200w.webp"
-                                                    type="image/webp">
+                                                type="image/webp">
                                                 <source srcset="/media/logos/instagram/logo-instagram-200w.png"
-                                                    type="image/png">
+                                                type="image/png">
                                                 <img src="/media/logos/instagram/logo-instagram.png"
-                                                    alt="Instagram logo">
+                                                alt="Instagram logo">
                                             </picture>
+                                            <a href="https://www.instagram.com/eljaviersiclaro/" target="_blank"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -674,6 +686,45 @@
 
                                     <p>Adventure Sports</p>
                                 </article>
+                            </section>
+
+                            <section class="contact-section">
+                                <div class="linkedin-contact-container">
+                                    <picture>
+                                        <source srcset="/media/logos/linkedin/logo-linkedin-200w.avif"
+                                        type="image/avif">
+                                        <source srcset="/media/logos/linkedin/logo-linkedin-200w.webp"
+                                        type="image/webp">
+                                        <source srcset="/media/logos/linkedin/logo-linkedin-200w.png"
+                                        type="image/png">
+                                        <img src="/media/logos/linkedin/logo-linkedin.png" alt="Instagram logo">
+                                    </picture>
+                                    <a href="https://www.linkedin.com/in/javier-ibanez-vizuete/" target="_blank"></a>
+                        </div>
+
+                                <div class="instagram-contact-container">
+                                    <picture>
+                                        <source srcset="/media/logos/instagram/logo-instagram-200w.avif"
+                                        type="image/avif">
+                                        <source srcset="/media/logos/instagram/logo-instagram-200w.webp"
+                                        type="image/webp">
+                                        <source srcset="/media/logos/instagram/logo-instagram-200w.png"
+                                        type="image/png">
+                                        <img src="/media/logos/instagram/logo-instagram.png"
+                                        alt="Instagram logo">
+                                    </picture>
+                                    <a href="https://www.instagram.com/eljaviersiclaro/" target="_blank"></a>
+                                </div>
+                                
+                                <div class="email-contact-container">
+                                    <picture>
+                                        <source srcset="/media/icons/icons-email/icon-email-200w.avif" media="(max-width: 1800px)" type="image/avif">
+                                        <source srcset="/media/icons/icons-email/icon-email-200w.webp" media="(max-width: 1800px)" type="image/webp">
+                                        <source srcset="/media/icons/icons-email/icon-email-200w.png" media="(max-width: 1800px)" type="image/png">
+                                        <img src="/media/icons/icons-email/icon-email.png" alt="Email Icon with an @ inside">
+                                    </picture>
+                                    <a href="mailto:javiersiclaroentoncesya@gmail.com"></a>
+                                </div>
                             </section>
                         </div>
                     </div>

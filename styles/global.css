@@ -382,6 +382,9 @@ input {
 }
 
 .message-for-helping > p {
+	display: flex;
+	flex-direction: column;
+	
 	font-size: 1rem;
 	color: var(--text-color);
 	font-family: "Chau Philomene One";
@@ -389,7 +392,7 @@ input {
 }
 
 .message-for-helping span {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	color: var(--text-color);
 	font-family: "Puritan";
 }
@@ -1080,6 +1083,14 @@ main {
 	align-items: center;
 }
 
+.logos-biography-container a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 .logos-biography-container {
 	display: flex;
 	justify-content: space-between;
@@ -1094,6 +1105,7 @@ main {
 	align-items: center;
 	align-self: flex-end;
 
+	position: relative;
 	width: 2rem;
 }
 
