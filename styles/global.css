@@ -1523,7 +1523,9 @@ main {
 	filter: brightness(90%);
 }
 
-.linkedin-contact-container, .instagram-contact-container, .email-contact-container {
+.linkedin-contact-container,
+.instagram-contact-container,
+.email-contact-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1547,6 +1549,79 @@ main {
 	left: 0;
 }
 
+/* -----------------------ANIMACIONES SECCION DE CONTACTO----------------------- */
+@keyframes persecution {
+	0% {
+		transform: translateX(-20rem);
+	}
+	50% {
+		transform: translateX(0rem);
+	}
+	100% {
+		transform: translateX(20rem);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotateY(180deg);
+	}
+	49% {transform: rotateY(180deg);}
+	50% {
+		transform: rotateY(0deg);
+	}
+	99% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(180deg);
+	}
+}
+
+.contact-page-input:checked ~ main .animation-running-away-container {
+	animation: persecution 6s linear infinite alternate 0s;
+}
+
+.contact-page-input:checked ~ main .container-to-rotate-animation {
+	animation: rotate 12s linear infinite  6s;
+
+}
+
+.animation-running-away-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 1rem;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.container-to-rotate-animation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bill-bullet-image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 3rem;
+	transform: rotateY(180deg);
+}
+
+.mario-run-away-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 4rem;
+}
+
 /* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
 .brand-shell-container {
 	display: flex;
@@ -1558,7 +1633,8 @@ main {
 
 .nintendo-font,
 .gameboy-font,
-.tm-font {
+.tm-font,
+.signature-project > p {
 	color: var(--text-color);
 }
 
@@ -1582,6 +1658,19 @@ main {
 	font-size: 0.8rem;
 	font-weight: 900;
 	margin-left: -0.2rem;
+}
+
+/* ----------------ESTILOS PARA MI FIRMA---------------------- */
+.signature-project {
+	display: flex;
+	align-items: center;
+
+	padding: 0 1.5rem;
+}
+
+.signature-project > p {
+	font-size: 0.8rem;
+	font-family: "Chau Philomene One";
 }
 
 /* ---------ESTILOS PARA LOS BOTONES-------- */
