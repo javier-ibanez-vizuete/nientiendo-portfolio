@@ -289,8 +289,6 @@ input {
 	~ .helping-user-modal-container
 	> .helping-message-and-image-container {
 	visibility: hidden;
-	/* transform: rotate(360deg) scale(0.1);
-	opacity: 0%; */
 }
 
 .helping-message-container {
@@ -384,7 +382,7 @@ input {
 .message-for-helping > p {
 	display: flex;
 	flex-direction: column;
-	
+
 	font-size: 1rem;
 	color: var(--text-color);
 	font-family: "Chau Philomene One";
@@ -635,9 +633,8 @@ input {
 	~ .helping-user-modal-container
 	> .biography-help-message-container
 	> .explosion-image-container {
-		animation: explosion-and-disappear 1s ease-out 4s;
-	}
-
+	animation: explosion-and-disappear 1s ease-out 4s;
+}
 
 @keyframes mario-appear {
 	0% {
@@ -669,9 +666,8 @@ input {
 	~ .helping-user-modal-container
 	> .biography-help-message-container
 	> .message-after-animation-container {
-		animation: mario-appear 5s ease-in-out 4.5s infinite;
-	}
-
+	animation: mario-appear 5s ease-in-out 4.5s infinite;
+}
 
 /* -------------------ESTILOS PARA LA GAMEBOY---------------- */
 main {
@@ -998,7 +994,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex: 1;
-	gap: 1rem;
+	gap: 0.5rem;
 }
 
 .nav-menu-input:checked ~ main .navigation-display {
@@ -1028,7 +1024,11 @@ main {
 .nav-menu-input:checked
 	~ .shadow-hobbies-input:checked
 	~ main
-	.navigation-menu-item-hobbies {
+	.navigation-menu-item-hobbies,
+.nav-menu-input:checked
+	~ .shadow-contact-input:checked
+	~ main
+	.navigation-menu-item-contact {
 	border: 0.1rem dashed var(--text-color-bg);
 	background-color: var(--secondary-bg-color);
 	filter: brightness(90%);
@@ -1485,6 +1485,68 @@ main {
 	visibility: visible;
 }
 
+/* ----------------------ESTILOS PARA LA SECCION DE CONTACTO-------------------- */
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	padding: var(--spacing-sm);
+	transition: visibility 0.1s ease-in;
+}
+
+.contact-page-input:checked ~ main .contact-section {
+	visibility: visible;
+}
+
+.contact-page-input:checked
+	~ .bg-shadow-linkedin-contact-input:checked
+	~ main
+	.linkedin-contact-container,
+.contact-page-input:checked
+	~ .bg-shadow-instagram-contact-input:checked
+	~ main
+	.instagram-contact-container,
+.contact-page-input:checked
+	~ .bg-shadow-email-contact-input:checked
+	~ main
+	.email-contact-container {
+	border: 0.1rem dashed var(--text-color-bg);
+	background-color: var(--secondary-bg-color);
+	filter: brightness(90%);
+}
+
+.linkedin-contact-container, .instagram-contact-container, .email-contact-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+
+	position: relative;
+	width: 2.5rem;
+}
+
+.contact-section picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-section a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 /* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
 .brand-shell-container {
 	display: flex;
@@ -1894,6 +1956,13 @@ main {
 	visibility: visible;
 }
 
+.nav-menu-input:checked
+	~ .shadow-contact-input:checked
+	~ main
+	.hobbies-up-shadow-button {
+	visibility: visible;
+}
+
 .projects-page-input:checked
 	~ .bg-shadow-trello-input:checked
 	~ .projects-displays-none:not(:checked)
@@ -1931,6 +2000,17 @@ main {
 	~ .sport-post-input:not(:checked)
 	~ main
 	.gaming-up-shadow-button {
+	visibility: visible;
+}
+
+.contact-page-input:checked
+	~ .bg-shadow-instagram-contact-input:checked
+	~ main
+	.linkedin-selection-up-button,
+.contact-page-input:checked
+	~ .bg-shadow-email-contact-input:checked
+	~ main
+	.instagram-selection-up-button {
 	visibility: visible;
 }
 
@@ -1983,7 +2063,11 @@ main {
 .nav-menu-input:checked
 	~ .shadow-projects-input:checked
 	~ main
-	.hobbies-down-shadow-button {
+	.hobbies-down-shadow-button,
+.nav-menu-input:checked
+	~ .shadow-hobbies-input:checked
+	~ main
+	.contact-down-shadow-button {
 	visibility: visible;
 }
 
@@ -2018,6 +2102,17 @@ main {
 	visibility: visible;
 }
 
+.contact-page-input:checked
+	~ .bg-shadow-linkedin-contact-input:checked
+	~ main
+	.instagram-selection-down-button,
+.contact-page-input:checked
+	~ .bg-shadow-instagram-contact-input:checked
+	~ main
+	.email-selection-down-button {
+	visibility: visible;
+}
+
 /* ------------------ESTILOS/FUNCIONES PARA EL BOTON SALIR (B)------------------ */
 .b-button-container > label {
 	visibility: hidden;
@@ -2043,7 +2138,8 @@ main {
 .hobbies-page-input:checked
 	~ .hobby-display-post:not(:checked)
 	~ main
-	.page-hobbies-out {
+	.page-hobbies-out,
+.contact-page-input:checked ~ main .page-contact-out {
 	visibility: visible;
 }
 
@@ -2097,7 +2193,8 @@ main {
 	~ main
 	.experience-in,
 .nav-menu-input:checked ~ .shadow-projects-input:checked ~ main .projects-in,
-.nav-menu-input:checked ~ .shadow-hobbies-input:checked ~ main .hobbies-in {
+.nav-menu-input:checked ~ .shadow-hobbies-input:checked ~ main .hobbies-in,
+.nav-menu-input:checked ~ .shadow-contact-input:checked ~ main .contact-in {
 	visibility: visible;
 }
 
@@ -2172,6 +2269,21 @@ main {
 
 .hobbies-page-input:checked ~ .bg-shadow-gaming-input:checked ~ main .gaming-in,
 .hobbies-page-input:checked ~ .bg-shadow-sport-input:checked ~ main .sport-in {
+	visibility: visible;
+}
+
+.contact-page-input:checked
+	~ .bg-shadow-linkedin-contact-input:checked
+	~ main
+	.linkedin-in,
+.contact-page-input:checked
+	~ .bg-shadow-instagram-contact-input:checked
+	~ main
+	.instagram-in,
+.contact-page-input:checked
+	~ .bg-shadow-email-contact-input:checked
+	~ main
+	.email-in {
 	visibility: visible;
 }
 
