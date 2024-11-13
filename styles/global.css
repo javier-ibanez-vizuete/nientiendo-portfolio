@@ -1580,11 +1580,11 @@ main {
 }
 
 .contact-page-input:checked ~ main .animation-running-away-container {
-	animation: persecution 6s linear infinite alternate 0s;
+	animation: persecution 5s linear infinite alternate 0s;
 }
 
 .contact-page-input:checked ~ main .container-to-rotate-animation {
-	animation: rotate 12s linear infinite  6s;
+	animation: rotate 10s linear infinite  5s;
 
 }
 
@@ -1601,6 +1601,10 @@ main {
 	z-index: 5;
 }
 
+.animation-running-away-container img {
+	filter: brightness(40%);
+}
+
 .container-to-rotate-animation {
 	display: flex;
 	justify-content: center;
@@ -1612,7 +1616,7 @@ main {
 	justify-content: center;
 	align-items: center;
 
-	width: 3rem;
+	width: 2rem;
 	transform: rotateY(180deg);
 }
 
@@ -1621,7 +1625,7 @@ main {
 	justify-content: center;
 	align-items: center;
 
-	width: 4rem;
+	width: 3rem;
 }
 
 /* ------------ESTILOS PARA LA MARCA DE LA CARCASA-------------- */
