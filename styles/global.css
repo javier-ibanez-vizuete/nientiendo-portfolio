@@ -1551,6 +1551,77 @@ main {
 }
 
 /* -----------------------ANIMACIONES SECCION DE CONTACTO----------------------- */
+@keyframes dissaper {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.bricks-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	bottom: 5rem;
+	right: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.broken-brick-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 50%;
+	opacity: 1;
+	width: 2rem;
+	transform: translate(-50%, 0);
+}
+
+.top-brocken-bricks, .bottom-brocken-bricks {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.small-broken-brick, .small-broken-brick > picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.small-broken-brick {
+	flex: 1;
+}
+
+.big-brick-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 6;
+	width: 2rem;
+}
+
 @keyframes persecution {
 	0% {
 		transform: translateX(-20rem);
@@ -1567,7 +1638,9 @@ main {
 	0% {
 		transform: rotateY(180deg);
 	}
-	49% {transform: rotateY(180deg);}
+	49% {
+		transform: rotateY(180deg);
+	}
 	50% {
 		transform: rotateY(0deg);
 	}
@@ -1584,8 +1657,7 @@ main {
 }
 
 .contact-page-input:checked ~ main .container-to-rotate-animation {
-	animation: rotate 10s linear infinite  5s;
-
+	animation: rotate 10s linear infinite 5s;
 }
 
 .animation-running-away-container {
@@ -1601,7 +1673,41 @@ main {
 	z-index: 5;
 }
 
-.animation-running-away-container img {
+@keyframes mario-jumping {
+	0% {
+		transform: translateY(0rem);
+	}
+	40% {
+		transform: translateY(0rem);
+	}
+	45% {
+		transform: translateY(-1rem);
+	}
+	47% {
+		transform: translateY(-2.5rem);
+	}
+	50% {
+		transform: translateY(-2.5rem);
+	}
+	55% {
+		transform: translateY(-1rem);
+	}
+	60% {
+		transform: translateY(0rem);
+	}
+	100% {
+		transform: translateY(0rem);
+	}
+}
+
+.contact-page-input:checked
+	~ main
+	.container-to-rotate-animation
+	> .mario-run-away-container {
+	animation: mario-jumping 5s linear infinite 0s;
+}
+
+.animation-running-away-container {
 	filter: brightness(40%);
 }
 
