@@ -207,7 +207,7 @@ input {
 .mobile-and-tablet-label > h2 {
 	color: var(--bg-color);
 	padding: var(--spacing-sm);
-	background-color: var(--text-color);
+	background-color: var(--primary-color);
 	border-radius: var(--radius);
 }
 
