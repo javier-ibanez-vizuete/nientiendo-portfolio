@@ -115,6 +115,13 @@
 		font-size: 0.5rem;
 	}
 
+	/* ---------------------ESTILOS PARA LA SECCION DE CONTACTO------ */
+	/* ----------paisaje / animacion------- */
+	.mario-background-container > picture > img {
+		width: 55rem;
+	}
+	
+
 	/* -----------ESTILOS PARA LA MARCA DE LA CARCASA-------- */
 	.nintendo-font {
 		padding-bottom: 0.1rem;

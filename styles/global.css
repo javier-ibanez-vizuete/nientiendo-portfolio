@@ -1520,7 +1520,6 @@ main {
 	~ main
 	.email-contact-container {
 	border: 0.1rem dashed var(--text-color-bg);
-	background-color: var(--secondary-bg-color);
 	filter: brightness(90%);
 }
 
@@ -1551,6 +1550,36 @@ main {
 }
 
 /* -----------------------ANIMACIONES SECCION DE CONTACTO----------------------- */
+/* ---------fondo paisaje / animacion------- */
+.mario-background-container {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.mario-background-container > picture {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex: 1;
+}
+
+.mario-background-container > picture > img {
+	width: 52rem;
+}
+
+.contact-page-input:checked ~ main .mario-background-container {
+	animation: persecution-reverse 5s linear infinite alternate 0s;
+}
+
+
+/* ---------Bloque de ladrillos /animacion----- */
 @keyframes dissaper {
 	0% {
 		opacity: 1;
@@ -1683,6 +1712,7 @@ main {
 	animation: dissaper 5s linear infinite normal 0s;
 }
 
+/* ----------Mario bross / animacion--------- */
 
 @keyframes persecution {
 	0% {
