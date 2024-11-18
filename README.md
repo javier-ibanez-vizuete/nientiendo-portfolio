@@ -101,6 +101,12 @@ El proyecto está estructurado de la siguiente manera:
 | | | ├── ladrillo-mario.webp
 | | | └── ladrillo-mario.png
 | | |
+| | ├── princess-castle/
+| | | ├── image-princess-castle-480w.avif
+| | | ├── image-princess-castle-480w.webp
+| | | ├── image-princess-castle-480w.png
+| | | └── image-princess-castle.png
+| | |
 | | ├── paisaje/
 | | | ├── background-bricks.avif
 | | | ├── background-bricks.webp
