@@ -1550,6 +1550,29 @@ main {
 }
 
 /* -----------------------ANIMACIONES SECCION DE CONTACTO----------------------- */
+/* ------------castillo de princesa / animacion------- */
+.princess-castle-background {
+	display: flex;
+	justify-content: center;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	z-index: -1;
+	width: 100%;
+
+}
+
+.princess-castle-background > picture {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex: 1;
+}
+
 /* ---------fondo paisaje / animacion------- */
 .mario-background-container {
 	display: flex;
