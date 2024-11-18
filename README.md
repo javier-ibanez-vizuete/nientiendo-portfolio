@@ -11,6 +11,8 @@ A parte de trabajar todos los aspectos del HTML y css, en este proyecto busco ir
 El proyecto está estructurado de la siguiente manera:
 
 ```
+├── .git/
+|
 ├── media/
 | ├── gif/
 | | └── mario-running.
@@ -28,7 +30,7 @@ El proyecto está estructurado de la siguiente manera:
 | | |   ├── icon-up-arrow-black-200w.webp
 | | |   ├── icon-up-arrow-black-200w.png
 | | |   └── icon-up-arrow-black.png
-| | | 
+| | |
 | | ├── icons-email/
 | | | ├── incon-email-200w.avif
 | | | ├── incon-email-200w.webp
@@ -164,3 +166,26 @@ El proyecto está estructurado de la siguiente manera:
 ├── LICENSE
 └── README.md
 ```
+
+## Enlace del proyecto
+
+https://nientiendo-portfolio.netlify.app
+
+## Caracteristicas principales
+
+- Contenido 100% responsivo.
+- Performance aplicado en todo el proyecto.
+- Estructura semantica adecuada.
+
+## Proceso
+
+- El proyecto comenzó como un reto derivado de otro portfolio que realicé (https://javier-ibanez.netlify.app), utilizando exclusivamente HTML y CSS puro. La idea era representar mucho más de mí, incluyendo mi pasión por los videojuegos. Por ello, intenté recrear una Game Boy clásica, haciendo que todas las interacciones en el proyecto se ejecutaran a través de los botones tradicionales de la Game Boy. De esta forma, buscaba darle un toque inmersivo y, al mismo tiempo, intuitivo.
+
+
+## Recursos Utiles
+
+- Squoosh (Utilizado para realizar el performance de todas las imagenes).
+- remove bg (utilizado para eliminar de forma precisa el fondo de algunas imagenes).
+- Pinetools (utilizado para pixelar las imagenes).
+- Css Portal (utilizado para generar Clip-Path de forma sencilla y fácil).
+- Css Matic (utilizado para generar box-shadows de forma rapida y profesional).
