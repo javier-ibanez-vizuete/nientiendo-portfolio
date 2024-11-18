@@ -1748,6 +1748,9 @@ main {
 	40% {
 		transform: translateY(0rem);
 	}
+	43% {
+		transform: translateY(0rem);
+	}
 	45% {
 		transform: translateY(-1rem);
 	}
@@ -1757,10 +1760,10 @@ main {
 	50% {
 		transform: translateY(-2.5rem);
 	}
-	55% {
+	52% {
 		transform: translateY(-1rem);
 	}
-	60% {
+	54% {
 		transform: translateY(0rem);
 	}
 	100% {
