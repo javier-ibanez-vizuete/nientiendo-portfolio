@@ -304,4 +304,10 @@
 	.power-input:checked ~ main .power-label-off-on {
 		left: 6.8rem;
 	}
+
+	/* ----------ESTILO PARA LOS HEADPHONES------------- */
+	.headphone-container {
+		margin-top: -2rem;
+	}
+	
 }
