@@ -20,8 +20,13 @@ Este proyecto es un portfolio web interactivo inspirado en el diseño retro de u
 - Paleta de colores retro bien definida.
 
 ## Captura de Pantalla
+### Vista Previa Web
+![Nientiendo Gameboy](media/images/image-link-nientiendo-portfolio.png)
+### Encendido Gameboy
+![Encendido de la Gameboy](media/gif/turning-on-gameboy.gif)
 
-! [Nientiendo Gameboy] (media/images/image-link-nientiendo-portfolio.png)
+### Navegacion en Gameboy
+![Navegacion en la Gameboy](media/gif/gameboy-navigation.gif)
 
 ## Estructura del Proyecto
 
