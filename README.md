@@ -1,10 +1,27 @@
-# Nientiendo - portfolio
+# Nientiendo Portfolio
 
-Este repositorio contiene un portfolio buscando un diseño retro/inmersivo al estilo de la antigua Nintendo Gameboy Classic.
+Por Javier Ibáñez Vizuete
 
 ## Descripción
 
-A parte de trabajar todos los aspectos del HTML y css, en este proyecto busco ir mas allá intentando recrear el sistema de navegacion de una gameboy para mostrar las diferentes partes de mi portfolio como son: Projects, Hobbies o Biography.
+Este proyecto es un portfolio web interactivo inspirado en el diseño retro de una Gameboy. La web permite explorar secciones como biografia, experiencia, proyectos, hobbies y contacto, utilizando elementos visuales y animaciones para brindar una experiencia única y envolvente.
+
+## Caracteristicas Principales
+
+- Navegación interactiva simulando una consola retro.
+- Diseño responsive y estilizado con animaciones personalizadas.
+- Secciones detalladas:
+  - **Biografia:** Trayectoria personal y profesional.
+  - **Experiencia:** Resumen laboral con detalles de roles y ubicaciones.
+  - **Proyectos:** Muestras destacadas con enfoque HTML y CSS.
+  - **Hobbies:** Actividades personales destacadas.
+  - **Contacto:** Enlaces directos a redes sociales y correo electronico.
+- Animacinoes complejas para una experiencia visual dinamica.
+- Paleta de colores retro bien definida.
+
+## Captura de Pantalla
+
+! [Nientiendo Gameboy] (https://nientiendo-portfolio.netlify.app/media/images/image-link-nientiendo-portfolio.png)
 
 ## Estructura del Proyecto
 
@@ -20,33 +37,22 @@ El proyecto está estructurado de la siguiente manera:
 │ ├── icons/
 | | ├── icons-arrows/
 | | | ├── icon-down-arrow/
-| | | | ├── icon-down-arrow-black-200w.avif
-| | | | ├── icon-down-arrow-black-200w.webp
-| | | | ├── icon-down-arrow-black-200w.png
+| | | | ├── Todos los formatos de las imagenes de los iconos de flechas abajo.
 | | | | └── icon-down-arrow-black.png
 | | | |
 | | | └── icon-up-arrow/
-| | |   ├── icon-up-arrow-black-200w.avif
-| | |   ├── icon-up-arrow-black-200w.webp
-| | |   ├── icon-up-arrow-black-200w.png
+| | |   ├── Todos los formatos de las imagenes de los iconos de flechas arriba
 | | |   └── icon-up-arrow-black.png
 | | |
 | | ├── icons-email/
-| | | ├── incon-email-200w.avif
-| | | ├── incon-email-200w.webp
-| | | ├── incon-email-200w.png
+| | | ├── Todos los formatos de imagenes de los iconos de imael
 | | | └── incon-email.png
 | | |
 | | ├── icons-explosion/
 | | | └── explosion-icon.png
 | | |
 | | └── icons-help/
-| |   ├── icon-help-200w.avif
-| |   ├── icon-help-200w.webp
-| |   ├── icon-help-200w.png
-| |   ├── icon-help-400w.avif
-| |   ├── icon-help-400w.webp
-| |   ├── icon-help-400w.png
+| |   ├── Todos los formatos de imagenes de los iconos de Ayuda
 | |   └── icon-help.png
 | |
 │ ├── images/
@@ -54,74 +60,40 @@ El proyecto está estructurado de la siguiente manera:
 | | | └──bullet-bill-bomb.png
 | | |
 | | ├── buttons/
-| | | ├── directionals-buttons.avif
-| | | ├── directionals-buttons.webp
-| | | ├── directionals-buttons.png
-| | | ├── enter-a-button.avif
-| | | ├── enter-a-button.webp
-| | | ├── enter-a-button.png
-| | | ├── exit-b-button.avif
-| | | ├── exit-b-button.webp
-| | | ├── exit-b-button.png
-| | | ├── main-menu-start-button.avif
-| | | ├── main-menu-start-button.webp
-| | | ├── main-menu-start-button.png
-| | | ├── select-button.avif
-| | | ├── select-button.webp
+| | | ├── Todos los formatos de imagenes de los botones
 | | | └── select-button.png
 | | |
 | | ├── hobbies-page/
 | | | ├── gaming/
-| | | | ├── hobby-gaming-twitch-480w.avif
-| | | | ├── hobby-gaming-twitch-480w.webp
-| | | | ├── hobby-gaming-twitch-480w.jpg
-| | | | ├── hobby-gaming-twitch-480w.png
-| | | | ├── hobby-gaming-twitch-800w.avif
-| | | | ├── hobby-gaming-twitch-800w.webp
-| | | | ├── hobby-gaming-twitch-800w.png
+| | | | ├── Todos los formatos de imagenes de Gaming
 | | | | └── hobby-gaming-twitch.png
 | | | |
 | | | └── sports/
-| | |   ├── image-hobby-sport-parachuting-200w.avif
-| | |   ├── image-hobby-sport-parachuting-200w.webp
-| | |   ├── image-hobby-sport-parachuting-200w.png
+| | |   ├── Todos los formatos de imagenes de Sports
 | | |   └── image-hobby-sport-parachuting.png
 | | |
 | | ├── juario-message/
-| | | ├── juario-say-hello-480w.avif
-| | | ├── juario-say-hello-480w.webp
-| | | ├── juario-say-hello-480w.png
-| | | ├── juario-say-hello-800w.avif
-| | | ├── juario-say-hello-800w.webp
-| | | ├── juario-say-hello-800w.png
+| | | ├── Todos los formatos de imagenes de Juario
 | | | └── juario-say-hello.png
 | | |
 | | ├── ladrillos/
-| | | ├── ladrillo-mario.avif
-| | | ├── ladrillo-mario.webp
+| | | ├── Todos los formatos de imagenes de ladrillos
 | | | └── ladrillo-mario.png
 | | |
 | | ├── princess-castle/
-| | | ├── image-princess-castle-480w.avif
-| | | ├── image-princess-castle-480w.webp
-| | | ├── image-princess-castle-480w.png
+| | | ├── Todos los formatos de imagenes de Castillos
 | | | └── image-princess-castle.png
 | | |
 | | ├── paisaje/
-| | | ├── background-bricks.avif
-| | | ├── background-bricks.webp
+| | | ├── Todos los formatos de imagenes de Paisaje
 | | | └── background-bricks.png
 | | |
 | | ├── superjuario-pointer/
-| | | ├── superjuario-pointing-480w.avif
-| | | ├── superjuario-pointing-480w.webp
-| | | ├── superjuario-pointing-480w.png
+| | | ├── Todos los formatos de imagenes de Superjuario Pointer
 | | | └── superjuario-pointing.png
 | | |
 | | ├── superjuario-remember/
-| | | ├── superjuario-remember-480w.avif
-| | | ├── superjuario-remember-480w.webp
-| | | ├── superjuario-remember-480w.png
+| | | ├── Todos los formatos de imagenes de Superjuario Remember
 | | | └── superjuario-remember.png
 | | |
 | | ├── wiked-mushroom/
@@ -134,27 +106,19 @@ El proyecto está estructurado de la siguiente manera:
 │ |
 │ └── logos/
 │   ├── github/
-|   | ├── github-logo-pixel-200w.avif
-|   | ├── github-logo-pixel-200w.webp
-|   | ├── github-logo-pixel-200w.png
+|   | ├── Todos los formatos de imagenes de los logos de Github
 |   | └── github-logo-pixel.png
 |   |
 │   ├── instagram/
-|   | ├── logo-instagram-200w.avif
-|   | ├── logo-instagram-200w.webp
-|   | ├── logo-instagram-200w.png
+|   | ├── Todos los formatos de imagenes de los logos de Instagram
 |   | └── logo-instagram.png
 |   |
 │   ├── linkedin/
-|   | ├── logo-linkedin-200w.avif
-|   | ├── logo-linkedin-200w.webp
-|   | ├── logo-linkedin-200w.png
+|   | ├── Todos los formatos de imagenes de los logos de Linkedin
 |   | └── logo-linkedin.png
 |   |
 │   └── rocket418/
-|     ├── logo-experience-rocket418-200w.avif
-|     ├── logo-experience-rocket418-200w.webp
-|     ├── logo-experience-rocket418-200w.png
+|     ├── Todos los formatos de imagenes de los logos de Rocket418
 |     └── logo-experience-rocket418.png
 |
 ├── resources/
@@ -186,7 +150,6 @@ https://nientiendo-portfolio.netlify.app
 ## Proceso
 
 - El proyecto comenzó como un reto derivado de otro portfolio que realicé (https://javier-ibanez.netlify.app), utilizando exclusivamente HTML y CSS puro. La idea era representar mucho más de mí, incluyendo mi pasión por los videojuegos. Por ello, intenté recrear una Game Boy clásica, haciendo que todas las interacciones en el proyecto se ejecutaran a través de los botones tradicionales de la Game Boy. De esta forma, buscaba darle un toque inmersivo y, al mismo tiempo, intuitivo.
-
 
 ## Recursos Utiles
 
