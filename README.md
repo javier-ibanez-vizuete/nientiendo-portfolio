@@ -21,7 +21,7 @@ Este proyecto es un portfolio web interactivo inspirado en el diseño retro de u
 
 ## Captura de Pantalla
 
-! [Nientiendo Gameboy] (https://nientiendo-portfolio.netlify.app/media/images/image-link-nientiendo-portfolio.png)
+! [Nientiendo Gameboy] (media/images/image-link-nientiendo-portfolio.png)
 
 ## Estructura del Proyecto
 
