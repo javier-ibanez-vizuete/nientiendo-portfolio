@@ -28,6 +28,21 @@ Este proyecto es un portfolio web interactivo inspirado en el diseño retro de u
 ### Navegacion en Gameboy
 ![Navegacion en la Gameboy](media/gif/gameboy-navigation.gif)
 
+## Tecnologías Utilizadas
+
+- **HTML5:** Para la estructura del contenido.
+- **CSS3:** Para estilos, diseño responsive y animaciones avanzadas.
+- **Google Fonts:** Fuentes como "Orbitron" y "Press Start 2P" para reforzar el estilo retro.
+- **Imagenes modernas:** Utilizacion de formatos optimizados como AVIF y WebP.
+
+## Uso
+
+**1.** Encender la "consola" pulsando el interruptor de encendido.
+
+**2.** Navegar por las secciones utilizando botones interactivos simulados en la interfaz.
+
+**3.** Explorar la biografia, experiencia, proyectos, hobbies y enlaces de contacto.
+
 ## Estructura del Proyecto
 
 El proyecto está estructurado de la siguiente manera:
@@ -144,17 +159,15 @@ El proyecto está estructurado de la siguiente manera:
 
 ## Enlace del proyecto
 
-https://nientiendo-portfolio.netlify.app
+[Web Retro Portfolio Nientiendo](https://nientiendo-portfolio.netlify.app) - Portfolio Creativo inspirado en una Gameboy Clasica.
 
-## Caracteristicas principales
+## Créditos
 
-- Contenido 100% responsivo.
-- Performance aplicado en todo el proyecto.
-- Estructura semantica adecuada.
-
-## Proceso
-
-- El proyecto comenzó como un reto derivado de otro portfolio que realicé (https://javier-ibanez.netlify.app), utilizando exclusivamente HTML y CSS puro. La idea era representar mucho más de mí, incluyendo mi pasión por los videojuegos. Por ello, intenté recrear una Game Boy clásica, haciendo que todas las interacciones en el proyecto se ejecutaran a través de los botones tradicionales de la Game Boy. De esta forma, buscaba darle un toque inmersivo y, al mismo tiempo, intuitivo.
+**Autor:** Javier Ibáñez Vizuete
+ - [LinkedIn](https://www.linkedin.com/in/javier-ibanez-vizuete/)
+ - [Instagram](https://www.instagram.com/eljaviersiclaro/)
+Recursos adicionales:
+ - Iconos y gráficos optimizados para la tematica retro.
 
 ## Recursos Utiles
 
@@ -163,3 +176,8 @@ https://nientiendo-portfolio.netlify.app
 - Pinetools (utilizado para pixelar las imagenes).
 - Css Portal (utilizado para generar Clip-Path de forma sencilla y fácil).
 - Css Matic (utilizado para generar box-shadows de forma rapida y profesional).
+
+## **Licencia**
+
+Este proyecto está bajo la **Licencia MIT.** ESto significa que puedes usar, modificar y distribuir este software libremente, siempre que se incluya la atribucion al autor original.
+Para mas detalles, consulta el archivo [LICENSE](LICENSE).
