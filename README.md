@@ -6,6 +6,10 @@ Por Javier Ibáñez Vizuete
 
 Este proyecto es un portfolio web interactivo inspirado en el diseño retro de una Gameboy. La web permite explorar secciones como biografia, experiencia, proyectos, hobbies y contacto, utilizando elementos visuales y animaciones para brindar una experiencia única y envolvente.
 
+## Enlace del proyecto
+
+[Web Retro Portfolio Nientiendo](https://nientiendo-portfolio.netlify.app) - Portfolio Creativo inspirado en una Gameboy Clasica.
+
 ## Caracteristicas Principales
 
 - Navegación interactiva simulando una consola retro.
@@ -46,6 +50,9 @@ Este proyecto es un portfolio web interactivo inspirado en el diseño retro de u
 ## Estructura del Proyecto
 
 El proyecto está estructurado de la siguiente manera:
+
+<details>
+<sumary>
 
 ```
 ├── .git/
@@ -156,16 +163,15 @@ El proyecto está estructurado de la siguiente manera:
 ├── LICENSE
 └── README.md
 ```
-
-## Enlace del proyecto
-
-[Web Retro Portfolio Nientiendo](https://nientiendo-portfolio.netlify.app) - Portfolio Creativo inspirado en una Gameboy Clasica.
+</sumary>
+</details>
 
 ## Créditos
 
 **Autor:** Javier Ibáñez Vizuete
  - [LinkedIn](https://www.linkedin.com/in/javier-ibanez-vizuete/)
  - [Instagram](https://www.instagram.com/eljaviersiclaro/)
+
 Recursos adicionales:
  - Iconos y gráficos optimizados para la tematica retro.
 
