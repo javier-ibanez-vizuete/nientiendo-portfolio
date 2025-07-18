@@ -1223,6 +1223,10 @@ main {
 	font-size: 0.5rem;
 }
 
+.experience-section-next-content .experience-text-duration {
+	font-size: 9px;
+}
+
 .experience-section-next-content > p > span {
 	text-transform: uppercase;
 }
